@@ -1,0 +1,44 @@
+- date: April 2016 - 
+  title: 京都大学工学部電気電子工学科 入学
+  content: null
+  link: https://www.s-ee.t.kyoto-u.ac.jp/
+  color: success
+
+- date: September 2016
+  title: エレクトロニクスサマーキャンプ TA賞
+  content: |
+    京都大学工学部電気電子工学科主催のサマーキャンプ
+    LEGO Mindstormsを使ったロボット製作
+  link: https://www.s-ee.t.kyoto-u.ac.jp/ja/summercamp
+  color: info
+
+- date: September 2018
+  title: エレクトロニクスサマーキャンプ 優勝
+  content: |
+    京都大学工学部電気電子工学科主催のサマーキャンプ
+    倒立振子の自動制御コンテスト
+  link: https://www.s-ee.t.kyoto-u.ac.jp/ja/summercamp/inv-pendulum/2018-kuee-sc3/report
+  color: info
+
+- date: March 2019 - December 2019
+  title: ソフトウェアエンジニア (アルバイト)
+  content: |
+    C言語でのWindowsのカーネルモードデバイスドライバ開発
+    C#言語でのWindowsのGUIアプリケーション開発
+  link: null
+  color: danger
+
+- date: August 2019
+  title: セキュリティ・キャンプ全国大会2019
+  content: |
+    独立行政法人情報処理推進機構(IPA)によるセキュリティ・キャンプ事業のメインイベント
+  link: https://www.ipa.go.jp/jinzai/camp/2019/zenkoku2019_index.html
+  color: warning
+
+- date: December 2019 -
+  title: Webエンジニア (アルバイト)
+  content: |
+    TypeScript, Reactでのフロントエンド開発
+    チームビルディング，エンジニアリングマネジメント
+  link: null
+  color: danger

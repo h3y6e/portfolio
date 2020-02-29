@@ -1,0 +1,39 @@
+- title: ARタテカン
+  content: 京都新聞やNHK，様々なニュースサイト等で紹介されました．
+  link: https://twitter.com/5ebec/status/998026144321454081?s=20
+  tags:
+    - Swift
+    - ARKit2
+  code: null
+
+- title: AR折田先生像
+  content: null
+  link: https://twitter.com/5ebec/status/1099505242566094848?s=20
+  tags: 
+    - Swift
+    - ARKit2
+  code: https://github.com/5ebec/AROritaSensei
+
+- title: Ameyadar
+  content: 各種SNSアカウント名に京都大学上空の予想降水量に応じた絵文字を貼付する．Twitterで運用中．
+  link: https://twitter.com/5ebec
+  tags:
+    - Python3
+  code: https://github.com/5ebec/Ameyadar
+
+- title: 単位取得率bot
+  content: Twitter:@5ebec 宛に京大の講義名をツイートすると単位取得率を教えてくれる．
+  link: https://twitter.com/5ebec
+  tags:
+    - Python3
+  code: null
+
+- title: AR名刺
+  content: |
+    QRコードがwebアプリのURL兼ARマーカーになっており，QRコードリーダで読み取ってサイトに遷移するとそのまま名刺上に情報を表示することが出来る．
+    AR.jsを使用することで端末に依存することなく(低スペックな端末でも)ARを表示することが可能．
+  tags:
+    - AR.js
+    - A-Frame
+  code: https://github.com/5ebec/ARCard
+

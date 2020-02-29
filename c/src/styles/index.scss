@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "colors";
+
+// Update Bulma's global variables
+// Colors
+$white: $snow;
+$white-bis: $white-smoke;
+$white-ter: $white-smoke-2;
+$grey-lightest: $gainsboro;
+$grey-lighter: $gainsboro-2;
+$grey-light: $very-light-gray;
+$grey: $oslo-grey;
+$grey-dark: $gun-powder;
+$grey-darker: $black-pearl;
+$black-ter: $black-pearl-2;
+$black-bis: $black;
+
+$link: $royal-blue;
+
+// Fonts
+$family-sans-serif: "Montserrat", BlinkMacSystemFont, -apple-system, system-ui, sans-serif;
+$family-monospace: "Fira Code", monospace;
+$family-primary: $family-sans-serif;
+$family-secondary: "M PLUS 1p", BlinkMacSystemFont, -apple-system, system-ui, sans-serif;
+$family-code: $family-monospace;
+
+@import "bulma";
+@import "bulma-timeline";
