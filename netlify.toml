@@ -1,7 +1,3 @@
 [[redirects]]
     from = "/"
     to = "/c"
-
-[[redirects]]
-    from = "/c/index.html"
-    to = "/c"
