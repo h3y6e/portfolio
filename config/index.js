@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `a5e_be_c`,
+  pathPrefix: ``,
   siteTitle: `a5e.be/c`, // Navigation and Site Title
   siteTitleShort: `a5e_be_c`, // short_name for manifest
   siteUrl: `https://a5e.be/c`, // Domain of your site. No trailing slash!
