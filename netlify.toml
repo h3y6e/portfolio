@@ -3,5 +3,5 @@
     to = "/c"
 
 [[redirects]]
-    from = "/c/"
+    from = "/c/index.html"
     to = "/c"
