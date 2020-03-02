@@ -9,6 +9,7 @@ module.exports = {
   author: `5ebec`,
 
   userTwitter: `@5ebec`,
+  facebookAppId: `2343092932649003`,
   ogSiteName: `5ebec`,
   ogLanguage: `ja_JP`,
   googleAnalyticsID: `UA-159418134-1`,

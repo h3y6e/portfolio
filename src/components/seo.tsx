@@ -13,6 +13,7 @@ interface HelmetData {
       ogLanguage: string
       twitter: string
       facebook: string
+      fbAppId: string
     }
   }
 }
@@ -29,6 +30,7 @@ const query = graphql`
         ogLanguage
         twitter
         facebook
+        fbAppId,
       }
     }
   }
@@ -46,6 +48,7 @@ const SEO: React.FC = () => {
         ogLanguage,
         twitter,
         facebook,
+        fbAppId,
       },
     },
   }: HelmetData = useStaticQuery(query)
@@ -58,7 +61,6 @@ const SEO: React.FC = () => {
       <meta name="image" content={image} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* ogp */}
-      <meta property="og:site_name" content={facebook} />
       <meta property="og:locale" content={ogLanguage} />
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />
@@ -69,6 +71,9 @@ const SEO: React.FC = () => {
       {/* twitter */}
       <meta name="twitter:site" content={twitter} />
       <meta name="twitter:card" content="summary" />
+      {/* facebook */}
+      <meta property="og:site_name" content={facebook} />
+      <meta property="fb:app_id" content={fbAppId} />
     </Helmet>
   )
 }

@@ -13,6 +13,7 @@ module.exports = {
     author: config.author,
     twitter: config.userTwitter,
     facebook: config.ogSiteName,
+    fbAppId: config.facebookAppId,
   },
   plugins: [
     "gatsby-plugin-emotion",
