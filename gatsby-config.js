@@ -59,7 +59,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Montserrat", "M PLUS 1p", "Fira Code"],
+          families: ["Montserrat", "Fira Code"],
         },
         custom: {
           families: ["Nico Moji"],
