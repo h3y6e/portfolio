@@ -1,24 +1,24 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img, { FluidObject } from "gatsby-image"
-import styled from "@emotion/styled"
-import { css } from "@emotion/core"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img, { FluidObject } from "gatsby-image";
+import styled from "@emotion/styled";
+import { css } from "@emotion/core";
 
 interface HeroData {
   hero: {
-    name: string
-    desc: string
-  }
-  bgImg: {
-    childImageSharp: {
-      fluid: FluidObject
-    }
-  }
-  icon: {
-    childImageSharp: {
-      fluid: FluidObject
-    }
-  }
+    name: string;
+    desc: string;
+    bgImg: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    };
+    icon: {
+      childImageSharp: {
+        fluid: FluidObject;
+      };
+    };
+  };
 }
 
 const query = graphql`
@@ -26,23 +26,23 @@ const query = graphql`
     hero: heroYaml {
       name
       desc
-    }
-    bgImg: file(relativePath: { eq: "bg_img.png" }) {
-      childImageSharp {
-        fluid(quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
+      bgImg {
+        childImageSharp {
+          fluid(quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
-    }
-    icon: file(relativePath: { eq: "5ebec.jpg" }) {
-      childImageSharp {
-        fluid(quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
+      icon {
+        childImageSharp {
+          fluid(quality: 90) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
         }
       }
     }
   }
-`
+`;
 
 const Header = styled.header`
   .header-bg {
@@ -53,16 +53,16 @@ const Header = styled.header`
       width: 100vw;
     }
   }
-`
+`;
 
 const Hero: React.FC = () => {
-  const data: HeroData = useStaticQuery(query)
+  const data: HeroData = useStaticQuery(query);
   return (
     <Header>
       <section className="hero is-fullheight">
         <div className="hero-body">
           <Img
-            fluid={data.bgImg.childImageSharp.fluid}
+            fluid={data.hero.bgImg.childImageSharp.fluid}
             className="header-bg"
             alt="hero image"
             style={{ position: "absolute" }}
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
               className="image is-128x128"
             >
               <Img
-                fluid={data.icon.childImageSharp.fluid}
+                fluid={data.hero.icon.childImageSharp.fluid}
                 alt="heyhoe"
                 css={css`
                   border-radius: 50%;
@@ -102,7 +102,7 @@ const Hero: React.FC = () => {
         </div>
       </section>
     </Header>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
