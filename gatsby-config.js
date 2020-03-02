@@ -77,6 +77,5 @@ module.exports = {
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
-    "gatsby-plugin-remove-trailing-slashes",
   ],
 }
