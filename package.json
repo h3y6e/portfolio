@@ -10,7 +10,8 @@
     "start": "gatsby develop -o",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "build:app": "yarn clean && yarn build"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
