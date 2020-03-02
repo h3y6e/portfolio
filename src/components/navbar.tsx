@@ -28,7 +28,7 @@ const Nav = styled.nav`
   }
 `
 
-const pathPrefix: string = require("../../config").pathPrefix
+const prefix = "/c"
 
 const Navbar: React.FC = () => {
   const data: NavigationData = useStaticQuery(query)
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link data-sal="slide-right" className="navbar-item" to={pathPrefix}>
+        <Link data-sal="slide-right" className="navbar-item" to={prefix}>
           a5e.be/c
         </Link>
         <a
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
               data-sal="slide-left"
               data-sal-delay={100 * index}
               className="navbar-item"
-              to={pathPrefix + item.link}
+              to={prefix + item.link}
             >
               {item.name}
             </Link>
