@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/c`,
   siteTitle: `a5e.be/c`,
   siteTitleShort: `a5e_be_c`,
-  siteUrl: `https://a5e.be/c`,
+  siteUrl: `https://a5e.be`,
   siteLanguage: `ja`,
   siteLogo: `/logos/logo.png`,
   siteDescription: `5ebec's portfolio`,

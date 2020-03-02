@@ -8,7 +8,7 @@
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "start": "gatsby develop -o",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit"
   },
