@@ -15,5 +15,5 @@ module.exports = {
 
   // Manifest and Progress color
   themeColor: `#a5ebec`,
-  backgroundColor: `#a5ebec`
+  backgroundColor: `#fbfbfb`
 };
