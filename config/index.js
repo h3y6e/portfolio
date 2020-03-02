@@ -1,10 +1,10 @@
 module.exports = {
   pathPrefix: ``,
   siteTitle: `a5e.be/c`,
-  siteTitleShort: `a5e_be_c`,
+  siteTitleShort: `a5e.be/c`,
   siteUrl: `https://a5e.be/c`,
   siteLanguage: `ja`,
-  siteLogo: `/logos/logo.jpg`,
+  siteLogo: `https://a5e.be/logos/logo.jpg`,
   siteDescription: `5ebec's portfolio`,
   author: `5ebec`,
 
