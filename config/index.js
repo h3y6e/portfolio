@@ -1,19 +1,19 @@
 module.exports = {
-  pathPrefix: ``,
-  siteTitle: `a5e.be/c`, // Navigation and Site Title
-  siteTitleShort: `a5e_be_c`, // short_name for manifest
-  siteUrl: `https://a5e.be/c`, // Domain of your site. No trailing slash!
-  siteLanguage: `ja`, // Language Tag on <html> element
-  siteLogo: `/logos/logo.png`, // Used for SEO and manifest
+  pathPrefix: `/c`,
+  siteTitle: `a5e.be/c`,
+  siteTitleShort: `a5e_be_c`,
+  siteUrl: `https://a5e.be/c`,
+  siteLanguage: `ja`,
+  siteLogo: `/logos/logo.png`,
   siteDescription: `5ebec's portfolio`,
-  author: `5ebec`, // Author for schema.org JSONLD
+  author: `5ebec`,
 
-  userTwitter: `@5ebec`, // Twitter Username
-  ogSiteName: `5ebec`, // Facebook Site Name
-  ogLanguage: `ja_JP`, // og:language
+  userTwitter: `@5ebec`,
+  ogSiteName: `5ebec`,
+  ogLanguage: `ja_JP`,
   googleAnalyticsID: `UA-XXXXXX-X`,
 
   // Manifest and Progress color
   themeColor: `#a5ebec`,
-  backgroundColor: `#14202a`,
-}
+  backgroundColor: `#14202a`
+};

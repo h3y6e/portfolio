@@ -5,12 +5,11 @@
   "version": "1.0.0",
   "author": "Hiroya Kawase",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "start": "gatsby develop -o",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
