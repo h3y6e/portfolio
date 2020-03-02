@@ -5,7 +5,6 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteUrl: config.siteUrl + pathPrefix,
-    pathPrefix,
     title: config.siteTitle,
     description: config.siteDescription,
     logo: config.siteLogo,
