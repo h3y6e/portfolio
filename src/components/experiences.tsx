@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import styled from "@emotion/styled"
 
-interface ExperienceData {
-  experience: {
+interface ExperiencesData {
+  experiences: {
     nodes: {
       date: string
       title: string
@@ -15,8 +15,8 @@ interface ExperienceData {
 }
 
 const query = graphql`
-  query ExperienceQuery {
-    experience: allExperienceYaml {
+  query ExperiencesQuery {
+    experiences: allExperiencesYaml {
       nodes {
         date
         title
@@ -34,13 +34,13 @@ const Content = styled.p`
   overflow-wrap: break-word;
 `
 
-const Experience: React.FC = () => {
-  const data: ExperienceData = useStaticQuery(query)
+const Experiences: React.FC = () => {
+  const data: ExperiencesData = useStaticQuery(query)
   return (
     <section id="experiences" className="section">
       <h1 data-sal="zoom-in" className="title has-text-centered">Experiences</h1>
       <div className="timeline is-centered">
-        {data.experience.nodes.map(item => (
+        {data.experiences.nodes.map(item => (
           <div data-sal="slide-up" className="timeline-item">
             <div className={`timeline-marker is-${item.color}`}></div>
             <div className="timeline-content">
@@ -57,4 +57,4 @@ const Experience: React.FC = () => {
   )
 }
 
-export default Experience
+export default Experiences
