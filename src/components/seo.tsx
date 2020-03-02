@@ -57,9 +57,6 @@ const SEO: React.FC = () => {
       <meta name="description" content={description} />
       <meta name="image" content={image} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      {/* twitter */}
-      <meta name="twitter:site" content={twitter} />
-      <meta name="twitter:card" content="summary_large_image" />
       {/* ogp */}
       <meta property="og:site_name" content={facebook} />
       <meta property="og:locale" content={ogLanguage} />
@@ -69,6 +66,9 @@ const SEO: React.FC = () => {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={description} />
+      {/* twitter */}
+      <meta name="twitter:site" content={twitter} />
+      <meta name="twitter:card" content="summary" />
     </Helmet>
   )
 }

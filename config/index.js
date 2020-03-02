@@ -4,7 +4,7 @@ module.exports = {
   siteTitleShort: `a5e_be_c`,
   siteUrl: `https://a5e.be/c`,
   siteLanguage: `ja`,
-  siteLogo: `/logos/logo.png`,
+  siteLogo: `../logos/logo.jpg`,
   siteDescription: `5ebec's portfolio`,
   author: `5ebec`,
 
