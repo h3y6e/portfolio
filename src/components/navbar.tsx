@@ -1,14 +1,14 @@
-import React, { useState, useCallback } from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import styled from "@emotion/styled"
+import React, { useState, useCallback, useEffect } from "react";
+import { graphql, Link, useStaticQuery } from "gatsby";
+import styled from "@emotion/styled";
 
 interface NavigationData {
   navigation: {
     nodes: {
-      name: string
-      link: string
-    }[]
-  }
+      name: string;
+      link: string;
+    }[];
+  };
 }
 
 const query = graphql`
@@ -20,26 +20,44 @@ const query = graphql`
       }
     }
   }
-`
+`;
 
 const Nav = styled.nav`
   &.is-transparent {
     background-color: transparent;
   }
-`
+`;
 
-const prefix = "/c"
+const prefix = "/c";
 
 const Navbar: React.FC = () => {
-  const data: NavigationData = useStaticQuery(query)
+  const data: NavigationData = useStaticQuery(query);
 
-  const [isActive, setState] = useState(false)
-  const handleClick = useCallback(() => setState(!isActive), [isActive])
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = useCallback(() => setIsActive(!isActive), [isActive]);
+
+  const [onTop, setOnTop] = useState(true);
+  const handleScroll = () => {
+    const offset =
+      window.pageYOffset ||
+      (document.documentElement && document.documentElement.scrollTop) ||
+      document.body.scrollTop;
+    if (offset > window.innerHeight) {
+      onTop && setOnTop(false);
+      return false;
+    }
+    setOnTop(true);
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    return () => document.removeEventListener("scroll", handleScroll);
+  });
 
   return (
     <Nav
       className={`navbar is-fixed-top is-family-monospace ${
-        isActive ? "" : "is-transparent"
+        isActive || !onTop ? "" : "is-transparent"
       }`}
       role="navigation"
       aria-label="main navigation"
@@ -68,6 +86,7 @@ const Navbar: React.FC = () => {
               data-sal-delay={100 * index}
               className="navbar-item"
               to={prefix + item.link}
+              onClick={handleClick}
             >
               {item.name}
             </Link>
@@ -75,7 +94,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

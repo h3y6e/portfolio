@@ -58,6 +58,7 @@
     "@types/react-helmet": "^5.0.14",
     "@types/styled-components": "^4.4.1",
     "@types/styled-system": "^5.1.4",
+    "gatsby-plugin-remove-trailing-slashes": "^2.1.21",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },

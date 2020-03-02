@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/`,
+  pathPrefix: ``,
   siteTitle: `a5e.be/c`,
   siteTitleShort: `a5e_be_c`,
   siteUrl: `https://a5e.be/c`,
