@@ -1,52 +1,54 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img, { FluidObject } from "gatsby-image"
-import styled from "@emotion/styled"
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import Img, { FluidObject } from "gatsby-image";
+import styled from "@emotion/styled";
 
-interface ProductData {
-  product: {
+interface ProductsData {
+  products: {
     nodes: {
-      title: string
-      content: string
-      link: string
-      tags: string[]
-      code: string
-    }[]
-  }
-  bgImg: {
-    childImageSharp: {
-      fluid: FluidObject
-    }
-  }
+      title: string;
+      content: string;
+      link: string;
+      img: {
+        childImageSharp: {
+          fluid: FluidObject;
+        };
+      };
+      tags: string[];
+      code: string;
+    }[];
+  };
 }
 
 const query = graphql`
-  query productQuery {
-    product: allProductYaml {
+  query productsQuery {
+    products: allProductsYaml {
       nodes {
         title
         content
         link
+        img {
+          childImageSharp {
+            fluid(quality: 90) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
         tags
         code
       }
     }
-    bgImg: file(relativePath: { eq: "bg_img3.png" }) {
-      childImageSharp {
-        fluid(quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
   }
-`
+`;
+
 const Content = styled.p`
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
-`
+`;
+
 const Products: React.FC = () => {
-  const data: ProductData = useStaticQuery(query)
+  const data: ProductsData = useStaticQuery(query);
   return (
     <section id="products" className="section">
       <h1 data-sal="zoom-in" className="title has-text-centered">
@@ -54,7 +56,7 @@ const Products: React.FC = () => {
       </h1>
       <div className="container">
         <div className="columns is-multiline">
-          {data.product.nodes.map(item => (
+          {data.products.nodes.map(item => (
             <div
               data-sal="zoom-in"
               className="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd"
@@ -62,15 +64,12 @@ const Products: React.FC = () => {
               <div className="card">
                 <div className="card-image">
                   <figure className="image">
-                    <Img
-                      fluid={data.bgImg.childImageSharp.fluid}
-                      alt="project"
-                    />
+                    <Img fluid={item.img.childImageSharp.fluid} />
                   </figure>
                 </div>
                 <div className="card-content">
                   <div className="content">
-                    <h4>{item.title}</h4>
+                    <a className="is-size-5 has-text-grey-dark has-text-weight-semibold" href={item.link}>{item.title}</a>
                     <Content>{item.content}</Content>
                   </div>
                   <div className="tile is-ancestor">
@@ -85,14 +84,14 @@ const Products: React.FC = () => {
                       </a>
                     )}
                   </div>
-                </div>
+                  </div>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
