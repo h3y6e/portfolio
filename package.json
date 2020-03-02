@@ -5,13 +5,14 @@
   "version": "1.0.0",
   "author": "Hiroya Kawase",
   "scripts": {
-    "build": "gatsby build --prefix-paths",
+    "build:app": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "start": "gatsby develop -o",
-    "serve": "gatsby serve --prefix-paths",
+    "serve:app": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit",
-    "build:app": "yarn clean && yarn build"
+    "move": "cd public && mkdir c | mv * c",
+    "build": "yarn clean && yarn build:app && yarn move"
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
