@@ -1,12 +1,7 @@
-import React from "react"
-
-// SEO
-import SEO from "../components/seo"
+import React from "react";
 
 const Index: React.FC = () => {
-  return (
-      <SEO />
-  )
-}
+  return <></>;
+};
 
-export default Index
+export default Index;
