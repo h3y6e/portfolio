@@ -1,4 +1,4 @@
 - name: へいほぅ
   desc: heyhoe's portfolio
-  icon: ./hero/5ebec.jpg
-  bgImg: ./hero/bg_img.jpg
+  icon: ./images/hero/5ebec.jpg
+  bgImg: ./images/hero/bg_img.jpg

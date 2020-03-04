@@ -1,7 +1,7 @@
 - title: ARタテカン
   content: 絶対に撤去されないタテカン．京都新聞やNHK，様々なニュースサイトで紹介された．
   link: https://www.google.com/search?q=AR%E3%82%BF%E3%83%86%E3%82%AB%E3%83%B3
-  img: ./products/artatekan.jpg
+  img: ./images/products/artatekan.jpg
   tags:
     - Swift
     - ARKit2
@@ -10,7 +10,7 @@
 - title: AR折田先生像
   content: 絶対に撤去されない折田先生像．様々なニュースサイトで紹介された．
   link: https://twitter.com/5ebec/status/1099505242566094848?s=20
-  img: ./products/arorita.jpg
+  img: ./images/products/arorita.jpg
   tags: 
     - Swift
     - ARKit2
@@ -19,7 +19,7 @@
 - title: Ameyadar
   content: 各種SNSアカウント名に京都大学上空の予想降水量に応じた絵文字を貼付する．Twitterで運用中．
   link: https://twitter.com/5ebec
-  img: ./products/ameyadar.jpg
+  img: ./images/products/ameyadar.jpg
   tags:
     - Python3
   code: https://github.com/5ebec/Ameyadar
@@ -27,7 +27,7 @@
 - title: 単位取得率bot
   content: Twitter:@5ebec 宛に京大の講義名をツイートすると単位取得率を教えてくれる．
   link: https://twitter.com/5ebec
-  img: ./products/tannishutoku.jpg
+  img: ./images/products/tannishutoku.jpg
   tags:
     - Python3
   code: null
@@ -36,7 +36,7 @@
   content: |
     QRコードがwebアプリのURL兼ARマーカーになっており，QRコードリーダで読み取ると名刺上に情報を表示することが出来る．
   link: https://arcard.5ebec.dev
-  img: ./products/arcard.jpg
+  img: ./images/products/arcard.jpg
   tags:
     - AR.js
     - A-Frame
