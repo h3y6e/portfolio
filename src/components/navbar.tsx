@@ -28,6 +28,10 @@ const Nav = styled.nav`
   }
 `;
 
+const Strong = styled.strong`
+  color: #2aa298;
+`
+
 const prefix = "/c";
 
 const Navbar: React.FC = () => {
@@ -63,8 +67,8 @@ const Navbar: React.FC = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link data-sal="slide-right" className="navbar-item" to={prefix}>
-          a5e.be/c
+        <Link data-sal="slide-right" className="navbar-item has-text-weight-semibold" to={prefix}>
+          a5e<Strong>.</Strong>be<Strong>/</Strong>c
         </Link>
         <a
           role="button"
