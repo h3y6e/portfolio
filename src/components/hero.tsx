@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
   const data: HeroData = useStaticQuery(query);
   return (
     <Header>
-      <section className="hero is-fullheight">
+      <section id="top" className="hero is-fullheight">
         <div className="hero-body">
           <Img
             fluid={data.hero.bgImg.childImageSharp.fluid}

@@ -72,5 +72,6 @@ module.exports = {
     "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
     "gatsby-plugin-remove-trailing-slashes",
+    "gatsby-plugin-smoothscroll",
   ],
 }

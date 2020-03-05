@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import styled from "@emotion/styled";
 
 interface NavigationData {
@@ -30,7 +31,7 @@ const Nav = styled.nav`
 
 const Strong = styled.strong`
   color: #2aa298;
-`
+`;
 
 const prefix = "/c";
 
@@ -67,9 +68,13 @@ const Navbar: React.FC = () => {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <Link data-sal="slide-right" className="navbar-item has-text-weight-semibold" to={prefix}>
+        <a
+          data-sal="slide-right"
+          className="navbar-item has-text-weight-semibold"
+          onClick={() => scrollTo("#top")}
+        >
           a5e<Strong>.</Strong>be<Strong>/</Strong>c
-        </Link>
+        </a>
         <a
           role="button"
           className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
@@ -85,15 +90,14 @@ const Navbar: React.FC = () => {
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
         <div className="navbar-end">
           {data.navigation.nodes.map((item, index) => (
-            <Link
+            <a
               data-sal="slide-left"
               data-sal-delay={100 * index}
               className="navbar-item"
-              to={prefix + item.link}
               onClick={handleClick}
             >
-              {item.name}
-            </Link>
+              <div onClick={() => scrollTo(item.link)}>{item.name}</div>
+            </a>
           ))}
         </div>
       </div>
