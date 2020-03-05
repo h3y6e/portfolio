@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
 import styled from "@emotion/styled";
 
@@ -32,8 +32,6 @@ const Nav = styled.nav`
 const Strong = styled.strong`
   color: #2aa298;
 `;
-
-const prefix = "/c";
 
 const Navbar: React.FC = () => {
   const data: NavigationData = useStaticQuery(query);
