@@ -11,7 +11,7 @@
   content: 絶対に撤去されない折田先生像．様々なニュースサイトで紹介された．
   link: https://twitter.com/5ebec/status/1099505242566094848?s=20
   img: ./images/products/arorita.jpg
-  tags: 
+  tags:
     - Swift
     - ARKit2
   code: https://github.com/5ebec/AROritaSensei
@@ -25,7 +25,8 @@
   code: https://github.com/5ebec/Ameyadar
 
 - title: 単位取得率bot
-  content: Twitter:@5ebec 宛に京大の講義名をツイートすると単位取得率を教えてくれる．
+  content:
+    Twitter:@5ebec 宛に京大の講義名をツイートすると単位取得率を教えてくれる．
   link: https://twitter.com/5ebec
   img: ./images/products/tannishutoku.jpg
   tags:
@@ -41,4 +42,3 @@
     - AR.js
     - A-Frame
   code: https://github.com/5ebec/ARCard
-

@@ -1,13 +1,12 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
 // Styles
-import "../styles/index.scss"
+import "../styles/index.scss";
 // Components
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Layout: React.FC = ({ children }) => {
-  useEffect(() => {
-  }, [])
+  useEffect(() => {}, []);
 
   return (
     <React.Fragment>
@@ -15,7 +14,7 @@ const Layout: React.FC = ({ children }) => {
       {children}
       <Footer />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

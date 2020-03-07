@@ -29,7 +29,9 @@ const Footer: React.FC = () => {
         {data.skills.nodes.map(item => (
           <>
             {item.langs.map(lang => (
-              <span data-sal="zoom-in" className="tag">{lang}</span>
+              <span data-sal="zoom-in" className="tag">
+                {lang}
+              </span>
             ))}
           </>
         ))}

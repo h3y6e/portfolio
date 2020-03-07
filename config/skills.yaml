@@ -1,12 +1,12 @@
 - langs:
-  - C
-  - Python
-  - Julia
-  - JavaScript
-  - TypeScript
-  - HTML + CSS
-  - Swift
-  - Scala
-  - LabVIEW
-  - Whitespace
-  - Japanese
+    - C
+    - Python
+    - Julia
+    - JavaScript
+    - TypeScript
+    - HTML + CSS
+    - Swift
+    - Scala
+    - LabVIEW
+    - Whitespace
+    - Japanese

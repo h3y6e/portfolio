@@ -1,5 +1,5 @@
-const config = require("./config")
-const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix
+const config = require("./config");
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -13,7 +13,7 @@ module.exports = {
     author: config.author,
     twitter: config.userTwitter,
     facebook: config.ogSiteName,
-    fbAppId: config.facebookAppId,
+    fbAppId: config.facebookAppId
   },
   plugins: [
     "gatsby-plugin-emotion",
@@ -24,14 +24,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "config",
-        path: `${__dirname}/config`,
-      },
+        path: `${__dirname}/config`
+      }
     },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: config.googleAnalyticsID,
-      },
+        trackingId: config.googleAnalyticsID
+      }
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -46,32 +46,32 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "standalone",
-        icon: "src/favicon.png",
-      },
+        icon: "src/favicon.png"
+      }
     },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Montserrat", "Noto Sans JP", "Fira Code"],
+          families: ["Montserrat", "Noto Sans JP", "Fira Code"]
         },
         custom: {
           families: ["Nico Moji"],
-          urls: ['https://fonts.googleapis.com/earlyaccess/nicomoji.css'],
+          urls: ["https://fonts.googleapis.com/earlyaccess/nicomoji.css"]
         }
-      },
+      }
     },
     {
       resolve: "gatsby-plugin-scroll-reveal",
       options: {
-          threshold: 0.5,
-          once: true,
+        threshold: 0.5,
+        once: true
       }
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
     "gatsby-plugin-remove-trailing-slashes",
-    "gatsby-plugin-smoothscroll",
-  ],
-}
+    "gatsby-plugin-smoothscroll"
+  ]
+};

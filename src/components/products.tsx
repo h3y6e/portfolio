@@ -69,7 +69,12 @@ const Products: React.FC = () => {
                 </div>
                 <div className="card-content">
                   <div className="content">
-                    <a className="is-size-5 has-text-grey-dark has-text-weight-semibold" href={item.link}>{item.title}</a>
+                    <a
+                      className="is-size-5 has-text-grey-dark has-text-weight-semibold"
+                      href={item.link}
+                    >
+                      {item.title}
+                    </a>
                     <Content>{item.content}</Content>
                   </div>
                   <div className="tile is-ancestor">
@@ -84,7 +89,7 @@ const Products: React.FC = () => {
                       </a>
                     )}
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
           ))}

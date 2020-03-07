@@ -1,8 +1,8 @@
 - name: About
-  link: '#about'
+  link: "#about"
 - name: Experiences
-  link: '#experiences'
+  link: "#experiences"
 - name: Products
-  link: '#products'
+  link: "#products"
 - name: Skills
-  link: '#skills'
+  link: "#skills"

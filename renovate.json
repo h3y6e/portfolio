@@ -1,10 +1,6 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "labels": [
-    "renovate"
-  ],
+  "extends": ["config:base"],
+  "labels": ["renovate"],
   "patch": {
     "automerge": true
   },

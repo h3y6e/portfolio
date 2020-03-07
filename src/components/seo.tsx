@@ -1,21 +1,21 @@
-import React from "react"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 interface HelmetData {
   site: {
     siteMetadata: {
-      siteUrl: string
-      title: string
-      description: string
-      image: string
-      siteLanguage: string
-      ogLanguage: string
-      twitter: string
-      facebook: string
-      fbAppId: string
-    }
-  }
+      siteUrl: string;
+      title: string;
+      description: string;
+      image: string;
+      siteLanguage: string;
+      ogLanguage: string;
+      twitter: string;
+      facebook: string;
+      fbAppId: string;
+    };
+  };
 }
 
 const query = graphql`
@@ -30,11 +30,11 @@ const query = graphql`
         ogLanguage
         twitter
         facebook
-        fbAppId,
+        fbAppId
       }
     }
   }
-`
+`;
 
 const SEO: React.FC = () => {
   const {
@@ -48,10 +48,10 @@ const SEO: React.FC = () => {
         ogLanguage,
         twitter,
         facebook,
-        fbAppId,
-      },
-    },
-  }: HelmetData = useStaticQuery(query)
+        fbAppId
+      }
+    }
+  }: HelmetData = useStaticQuery(query);
 
   return (
     <Helmet title={title}>
@@ -75,7 +75,7 @@ const SEO: React.FC = () => {
       <meta property="og:site_name" content={facebook} />
       <meta property="fb:app_id" content={fbAppId} />
     </Helmet>
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;

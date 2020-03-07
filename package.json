@@ -11,7 +11,8 @@
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit",
-    "build": "yarn clean && yarn build:app"
+    "build": "yarn clean && yarn build:app",
+    "format": "prettier --write '**/*.{js,ts,tsx,json,yaml,md}' --ignore-path .gitignore"
   },
   "dependencies": {
     "@emotion/core": "10.0.28",

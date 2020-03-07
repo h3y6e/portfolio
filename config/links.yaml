@@ -1,34 +1,34 @@
 - title: Email
   link: mailto:hash@5ebec.dev
   color: "#ea4335"
-  icon: 
+  icon:
     - fas
     - envelope
 
 - title: Instagram
   link: https://www.instagram.com/5ebec/
   color: "#c13584"
-  icon: 
+  icon:
     - fab
     - instagram
 
 - title: Twitter
   link: https://twitter.com/5ebec
   color: "#1da1f2"
-  icon: 
+  icon:
     - fab
     - twitter
 
 - title: GitHub
   link: https://github.com/5ebec
   color: "#333"
-  icon: 
+  icon:
     - fab
     - github
 
 - title: Amazon
   link: http://amzn.asia/4qVYWui
   color: "#ff9900"
-  icon: 
+  icon:
     - fab
     - amazon

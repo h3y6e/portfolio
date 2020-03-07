@@ -1,15 +1,15 @@
-import React from "react"
+import React from "react";
 
 // SEO
-import SEO from "../components/seo"
+import SEO from "../components/seo";
 // Components
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-import About from "../components/about"
-import Links from "../components/links"
-import Experiences from "../components/experiences"
-import Products from "../components/products"
-import Skills from "../components/skills"
+import Layout from "../components/layout";
+import Hero from "../components/hero";
+import About from "../components/about";
+import Links from "../components/links";
+import Experiences from "../components/experiences";
+import Products from "../components/products";
+import Skills from "../components/skills";
 
 const Index: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const Index: React.FC = () => {
       <Products />
       <Skills />
     </Layout>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
