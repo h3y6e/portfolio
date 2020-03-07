@@ -40,21 +40,21 @@ const Navbar: React.FC = () => {
   const handleClick = useCallback(() => setIsActive(!isActive), [isActive]);
 
   const [onTop, setOnTop] = useState(true);
-  const handleScroll = () => {
+  const handleScroll = (): void => {
     const offset =
       window.pageYOffset ||
       (document.documentElement && document.documentElement.scrollTop) ||
       document.body.scrollTop;
     if (offset > window.innerHeight) {
-      onTop && setOnTop(false);
-      return false;
+      setOnTop(false);
+      return;
     }
     setOnTop(true);
   };
 
   useEffect(() => {
     document.addEventListener("scroll", handleScroll);
-    return () => document.removeEventListener("scroll", handleScroll);
+    return (): void => document.removeEventListener("scroll", handleScroll);
   });
 
   return (
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
         <a
           data-sal="slide-right"
           className="navbar-item has-text-weight-semibold"
-          onClick={() => scrollTo("#top")}
+          onClick={(): void => scrollTo("#top")}
         >
           a5e<Strong>.</Strong>be<Strong>/</Strong>c
         </a>
@@ -80,9 +80,9 @@ const Navbar: React.FC = () => {
           aria-expanded="false"
           onClick={handleClick}
         >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
         </a>
       </div>
       <div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
               className="navbar-item"
               onClick={handleClick}
             >
-              <div onClick={() => scrollTo(item.link)}>{item.name}</div>
+              <div onClick={(): void => scrollTo(item.link)}>{item.name}</div>
             </a>
           ))}
         </div>

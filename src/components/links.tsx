@@ -10,6 +10,7 @@ import {
   faAmazon
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 library.add(faTwitter, faInstagram, faGithub, faAmazon);
 library.add(faEnvelope);
 
@@ -37,9 +38,9 @@ const query = graphql`
   }
 `;
 
-const Button = styled.a`
-  background-color: ${props => props.color};
-`;
+const Button = styled.a(props => ({
+  backgroundColor: props.color
+}));
 
 const Links: React.FC = () => {
   const data: LinksData = useStaticQuery(query);

@@ -1,20 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 // Styles
 import "../styles/index.scss";
 // Components
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
-const Layout: React.FC = ({ children }) => {
-  useEffect(() => {}, []);
-
-  return (
-    <React.Fragment>
-      <Navbar />
-      {children}
-      <Footer />
-    </React.Fragment>
-  );
-};
+const Layout: React.FC = ({ children }) => (
+  <>
+    <Navbar />
+    {children}
+    <Footer />
+  </>
+);
 
 export default Layout;

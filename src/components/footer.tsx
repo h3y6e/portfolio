@@ -7,19 +7,16 @@ const Br = styled.br`
   }
 `;
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="footer">
-      <div className="content has-text-centered is-family-monospace">
-        <p>
-          &copy; 2020 <a href="https://github.com/5ebec">5ebec</a>
-          <Br /> :: Powered by <a href="https://www.gatsbyjs.org/">
-            Gatsby
-          </a> + <a href="https://bulma.io/">Bulma</a>
-        </p>
-      </div>
-    </footer>
-  );
-};
+const Footer: React.FC = () => (
+  <footer className="footer">
+    <div className="content has-text-centered is-family-monospace">
+      <p>
+        &copy; 2020 <a href="https://github.com/5ebec">5ebec</a> <Br /> ::
+        Powered by <a href="https://www.gatsbyjs.org/">Gatsby</a> +{" "}
+        <a href="https://bulma.io/">Bulma</a>
+      </p>
+    </div>
+  </footer>
+);
 
 export default Footer;

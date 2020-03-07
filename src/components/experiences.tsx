@@ -44,7 +44,7 @@ const Experiences: React.FC = () => {
       <div className="timeline is-centered">
         {data.experiences.nodes.map(item => (
           <div data-sal="slide-up" className="timeline-item">
-            <div className={`timeline-marker is-${item.color}`}></div>
+            <div className={`timeline-marker is-${item.color}`} />
             <div className="timeline-content">
               <p className="heading">{item.date}</p>
               <a

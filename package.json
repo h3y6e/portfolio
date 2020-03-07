@@ -12,7 +12,9 @@
     "clean": "gatsby clean",
     "type-check": "tsc --noEmit --pretty",
     "format": "prettier --write '**/*.{js,ts,tsx,json,yaml,md}' --ignore-path .gitignore",
-    "deploy": "run-s clean format build"
+    "lint": "eslint . --ext .js,.ts,.tsx --ignore-path .gitignore",
+    "fix": "yarn lint --fix",
+    "deploy": "run-s clean build"
   },
   "dependencies": {
     "@emotion/core": "10.0.28",
@@ -53,6 +55,15 @@
     "@types/react": "16.9.23",
     "@types/react-dom": "16.9.5",
     "@types/react-helmet": "5.0.15",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
     "gatsby-plugin-remove-trailing-slashes": "2.1.22",
     "npm-run-all": "4.1.5",
     "prettier": "1.19.1"

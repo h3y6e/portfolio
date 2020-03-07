@@ -1,0 +1,62 @@
+env:
+  browser: true
+  es6: true
+  node: true
+
+extends:
+  - airbnb
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/typescript
+  - plugin:prettier/recommended
+  - prettier/@typescript-eslint
+
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+
+parser: "@typescript-eslint/parser"
+
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018
+  sourceType: module
+  project: ./tsconfig.json
+
+plugins:
+  - "@typescript-eslint"
+  - prettier
+
+rules:
+  arrow-body-style:
+    - 2
+    - as-needed
+  no-param-reassign:
+    - 2
+    - props: false
+  no-unused-expressions:
+    - 2
+    - allowTaggedTemplates: true
+  import/extensions: 0
+  react/jsx-one-expression-per-line: 0
+  react/display-name: 1
+  react/no-unescaped-entities: 0
+  react/prop-types: 0
+  react/jsx-filename-extension:
+    - 1
+    - extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
+  jsx-a11y/anchor-is-valid: 0
+  jsx-a11y/no-static-element-interactions: 0
+  jsx-a11y/click-events-have-key-events: 0
+  jsx-a11y/interactive-supports-focus: 0
+
+overrides:
+  - files: "*.js"
+    rules:
+      "@typescript-eslint/camelcase": 0
+      "@typescript-eslint/explicit-function-return-type": 0
+      "@typescript-eslint/no-var-requires": 0

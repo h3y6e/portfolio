@@ -1,8 +1,9 @@
 {
   "extends": ["config:base"],
   "labels": ["renovate"],
-  "patch": {
-    "automerge": true
+  "automerge": true,
+  "major": {
+    "automerge": false
   },
   "packageRules": [
     {
