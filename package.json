@@ -5,14 +5,14 @@
   "version": "1.0.0",
   "author": "Hiroya Kawase",
   "scripts": {
-    "build:app": "gatsby build --prefix-paths",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "start": "gatsby develop -o",
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
-    "type-check": "tsc --noEmit",
-    "build": "yarn clean && yarn build:app",
-    "format": "prettier --write '**/*.{js,ts,tsx,json,yaml,md}' --ignore-path .gitignore"
+    "type-check": "tsc --noEmit --pretty",
+    "format": "prettier --write '**/*.{js,ts,tsx,json,yaml,md}' --ignore-path .gitignore",
+    "deploy": "run-s clean format build"
   },
   "dependencies": {
     "@emotion/core": "10.0.28",
@@ -54,6 +54,7 @@
     "@types/react-dom": "16.9.5",
     "@types/react-helmet": "5.0.15",
     "gatsby-plugin-remove-trailing-slashes": "2.1.22",
+    "npm-run-all": "^4.1.5",
     "prettier": "1.19.1"
   },
   "repository": {

@@ -37,7 +37,9 @@ const query = graphql`
   }
 `;
 
-const Button = styled.a(props => ({ backgroundColor: props.color }));
+const Button = styled.a`
+  background-color: ${props => props.color};
+`;
 
 const Links: React.FC = () => {
   const data: LinksData = useStaticQuery(query);
