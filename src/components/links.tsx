@@ -51,6 +51,7 @@ const Links: React.FC = () => {
           data-sal="slide-up"
           href={item.link}
           target="_blank"
+          rel="noopener noreferrer"
           color={item.color}
           className="button has-text-white is-rounded"
         >
