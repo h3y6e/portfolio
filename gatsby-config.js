@@ -64,8 +64,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-scroll-reveal",
       options: {
-          threshold: 0.5, // Percentage of an element's area that needs to be visible to launch animation
-          once: true, // Defines if animation needs to be launched once
+          threshold: 0.5,
+          once: true,
       }
     },
     "gatsby-plugin-offline",

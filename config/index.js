@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: ``,
+  pathPrefix: `/`,
   siteTitle: `a5e.be/c`,
   siteTitleShort: `a5e.be/c`,
-  siteUrl: `https://a5e.be/c`,
+  siteUrl: `https://a5e.be`,
   siteLanguage: `ja`,
   siteLogo: `https://a5e.be/logos/logo.jpg`,
   siteDescription: `5ebec's portfolio`,
