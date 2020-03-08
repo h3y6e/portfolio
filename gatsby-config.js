@@ -37,19 +37,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sitemap",
     {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.startUrl,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: "standalone",
-        icon: "static/logos/favicon.png"
-      }
-    },
-    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
@@ -68,10 +55,23 @@ module.exports = {
         once: true
       }
     },
-    "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
     "gatsby-plugin-remove-trailing-slashes",
-    "gatsby-plugin-smoothscroll"
+    "gatsby-plugin-smoothscroll",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: config.siteTitle,
+        short_name: config.siteTitleShort,
+        description: config.siteDescription,
+        start_url: config.startUrl,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: "standalone",
+        icon: "static/logos/favicon.png"
+      }
+    },
+    "gatsby-plugin-offline"
   ]
 };

@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: `https://a5e.be`,
   startUrl: `/c`,
   siteLanguage: `ja`,
-  siteLogo: `https://a5e.be/logos/logo.jpg`,
+  siteLogo: `static/logos/logo.jpg`,
   siteDescription: `5ebec's portfolio`,
   author: `5ebec`,
 
