@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       (document.documentElement && document.documentElement.scrollTop) ||
       document.body.scrollTop;
     if (offset > window.innerHeight) {
-      setOnTop(false);
+      if (onTop) setOnTop(false);
       return;
     }
     setOnTop(true);
@@ -69,7 +69,10 @@ const Navbar: React.FC = () => {
         <a
           data-sal="slide-right"
           className="navbar-item has-text-weight-semibold"
-          onClick={(): void => scrollTo("#top")}
+          onClick={(): void => {
+            scrollTo("#top");
+            setIsActive(false);
+          }}
         >
           a5e<Strong>.</Strong>be<Strong>/</Strong>c
         </a>
@@ -92,9 +95,12 @@ const Navbar: React.FC = () => {
               data-sal="slide-left"
               data-sal-delay={100 * index}
               className="navbar-item"
-              onClick={handleClick}
+              onClick={(): void => {
+                scrollTo(item.link);
+                setIsActive(false);
+              }}
             >
-              <div onClick={(): void => scrollTo(item.link)}>{item.name}</div>
+              {item.name}
             </a>
           ))}
         </div>
