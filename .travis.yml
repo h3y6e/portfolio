@@ -1,0 +1,13 @@
+sudo: false
+dist: trusty
+language: node_js
+cache: yarn
+node_js:
+  - node
+addons:
+  chrome: stable
+before_install:
+  - yarn global add @lhci/cli@0.3.x
+script:
+  - yarn build
+  - lhci autorun

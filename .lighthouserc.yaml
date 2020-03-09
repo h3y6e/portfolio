@@ -1,0 +1,11 @@
+ci:
+  collect:
+    startServerCommand: yarn serve
+    url: http://localhost:9000/c/
+  assert:
+    preset: lighthouse:recommended
+    asserttions:
+      uses-http2: off
+      redirects-http: off
+  upload:
+    target: temporary-public-storage
