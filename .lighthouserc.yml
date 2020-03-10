@@ -5,12 +5,12 @@ ci:
   assert:
     preset: lighthouse:recommended
     asserttions:
-      font-display: off
-      mainthread-work-breakdown: off
-      users-responsive-images: off
-      users-rel-preconnect: off
-      fid: off
       color-contrast: off
+      font-display: off
+      unminified-css: off
+      unused-css-rules: off
+      users-rel-preconnect: off
+      uses-responsive-images: off
       uses-http2: off
       redirects-http: off
   upload:
