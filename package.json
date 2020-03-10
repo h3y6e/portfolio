@@ -11,7 +11,7 @@
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve --prefix-paths",
     "type-check": "tsc --noEmit --pretty",
-    "format": "prettier --write '**/*.{js,ts,tsx,json,yaml,md}' --ignore-path .gitignore",
+    "format": "prettier --write '**/*.{js,ts,tsx,json,yml,md}' --ignore-path .gitignore",
     "lint": "eslint . --ext .js,.ts,.tsx --ignore-path .gitignore",
     "fix": "yarn lint --fix",
     "deploy": "run-s clean build"
