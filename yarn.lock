@@ -5742,10 +5742,10 @@ gatsby-plugin-sitemap@2.2.28:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-smoothscroll@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-smoothscroll/-/gatsby-plugin-smoothscroll-1.0.4.tgz#89368fa04ffe2d02f15a9acd637e9d1c5a2d7ec9"
-  integrity sha512-B61Iv/rGj0X5Uo43EtY+CYnM1ER0Ld/GfDCr9O1v+BzJ15KT2LxWPyk5/CbKb4O4VuX4n+jcQrOVBEyg2D1jIA==
+gatsby-plugin-smoothscroll@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-smoothscroll/-/gatsby-plugin-smoothscroll-1.1.0.tgz#c98364e49125dcc87146406db0bc707a413653c7"
+  integrity sha512-htYkMLlTSU4mxGhiXqkDx3M6PBsEjGCEz0GbcsEQ1q6yxMxeyKyr1quLZQdJFGzosIoMe4IS4yLP0L4UsAFdGg==
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
