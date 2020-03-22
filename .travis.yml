@@ -3,7 +3,7 @@ dist: trusty
 language: node_js
 cache: yarn
 node_js:
-  - node
+  - stable
 addons:
   chrome: stable
 before_install:
