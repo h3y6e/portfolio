@@ -4,14 +4,14 @@ ci:
     url: http://localhost:9000/c/
   assert:
     preset: lighthouse:recommended
-    asserttions:
-      color-contrast: off
-      font-display: off
-      unminified-css: off
-      unused-css-rules: off
-      users-rel-preconnect: off
-      uses-responsive-images: off
-      uses-http2: off
-      redirects-http: off
+    assertions:
+      color-contrast: warn
+      font-display: warn
+      unminified-css: warn
+      unused-css-rules: warn
+      uses-rel-preconnect: warn
+      uses-responsive-images: warn
+      uses-http2: warn
+      redirects-http: warn
   upload:
     target: temporary-public-storage
