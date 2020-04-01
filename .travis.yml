@@ -4,8 +4,8 @@ node_js:
 addons:
   chrome: stable
 before_install:
-  - npm install -g @lhci/cli
+  - yarn global add @lhci/cli
 script:
-  - npm run deploy
+  -yarn deploy
 after_success:
   - lhci autorun
