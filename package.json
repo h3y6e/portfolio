@@ -23,7 +23,7 @@
     "@fortawesome/free-brands-svg-icons": "5.13.0",
     "@fortawesome/free-solid-svg-icons": "5.13.0",
     "@fortawesome/react-fontawesome": "0.1.9",
-    "bulma": "0.8.1",
+    "bulma": "0.8.2",
     "bulma-timeline": "3.0.4",
     "gatsby": "2.20.12",
     "gatsby-image": "2.3.1",
