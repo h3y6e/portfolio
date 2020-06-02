@@ -13,5 +13,6 @@ ci:
       uses-responsive-images: warn
       uses-http2: warn
       redirects-http: warn
+      unused-javascript: warn
   upload:
     target: temporary-public-storage

@@ -69,9 +69,18 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "standalone",
-        icon: "static/logos/favicon.png"
+        icon: "static/logos/favicon.png",
+        icon_options: {
+          purpose: "maskable"
+        }
       }
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
+      },
+    }
   ]
 };
