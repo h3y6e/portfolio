@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@types/node": "13.13.12",
-    "@types/react": "16.9.35",
+    "@types/react": "16.9.36",
     "@types/react-dom": "16.9.8",
     "@types/react-helmet": "5.0.16",
     "@typescript-eslint/eslint-plugin": "2.34.0",
