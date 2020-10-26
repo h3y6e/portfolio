@@ -1,4 +1,4 @@
-- date: April 2016 -
+- date: April 2016 - September 2020
   title: 京都大学工学部電気電子工学科 入学
   content: null
   link: https://www.s-ee.t.kyoto-u.ac.jp/
@@ -42,3 +42,24 @@
     チームビルディング，エンジニアリングマネジメント
   link: null
   color: danger
+
+- date: August 2020
+  title: Cookpad Online Summer Internship 2020
+  content: |
+    Webアプリ開発コース
+  link: null
+  color: danger
+
+- date: September 2020
+  title: VOYAGE GROUP GrowthTech
+  content: |
+    チーム開発
+  link: null
+  color: danger
+
+- date: October 2020 -
+  title: 奈良先端科学技術大学院大学 入学
+  content: null
+  link: https://www.naist.jp/
+  color: success
+
