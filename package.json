@@ -14,7 +14,8 @@
     "format": "prettier --write '**/*.{js,ts,tsx,json,yml,md}' --ignore-path .gitignore",
     "lint": "eslint . --ext .js,.ts,.tsx --ignore-path .gitignore",
     "fix": "yarn lint --fix",
-    "deploy": "run-s clean build"
+    "deploy": "run-s clean build",
+    "lh": "lhci autorun"
   },
   "dependencies": {
     "@emotion/core": "10.0.35",
@@ -23,6 +24,7 @@
     "@fortawesome/free-brands-svg-icons": "5.15.1",
     "@fortawesome/free-solid-svg-icons": "5.15.1",
     "@fortawesome/react-fontawesome": "0.1.11",
+    "@lhci/cli": "0.6.1",
     "bulma": "0.9.1",
     "bulma-timeline": "3.0.4",
     "gatsby": "2.24.85",
