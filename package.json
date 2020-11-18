@@ -46,7 +46,7 @@
     "gatsby-source-filesystem": "2.3.35",
     "gatsby-transformer-sharp": "2.5.19",
     "gatsby-transformer-yaml": "2.4.15",
-    "node-sass": "4.14.1",
+    "node-sass": "5.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
