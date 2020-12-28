@@ -36,7 +36,6 @@ module.exports = {
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -56,7 +55,6 @@ module.exports = {
         once: true
       }
     },
-    "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
     "gatsby-plugin-smoothscroll",
     {
@@ -65,14 +63,12 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: config.startUrl,
-        background_color: config.backgroundColor,
+        lang: "ja",
         theme_color: config.themeColor,
         display: "standalone",
         icon: "static/logos/favicon.png",
-        icon_options: {
-          purpose: "maskable"
-        }
+        start_url: config.startUrl,
+        background_color: config.backgroundColor
       }
     },
     "gatsby-plugin-offline"
