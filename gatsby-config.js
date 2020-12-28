@@ -16,6 +16,13 @@ module.exports = {
     fbAppId: config.facebookAppId
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: config.googleAnalyticsID,
+        head: true
+      }
+    },
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
@@ -25,12 +32,6 @@ module.exports = {
       options: {
         name: "config",
         path: `${__dirname}/config`
-      }
-    },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: config.googleAnalyticsID
       }
     },
     "gatsby-plugin-sharp",
