@@ -57,7 +57,6 @@ module.exports = {
     },
     "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
-    "gatsby-plugin-remove-trailing-slashes",
     "gatsby-plugin-smoothscroll",
     {
       resolve: "gatsby-plugin-manifest",
@@ -75,12 +74,6 @@ module.exports = {
         }
       }
     },
-    "gatsby-plugin-offline",
-    {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-      options: {
-        devMode: true
-      }
-    }
+    "gatsby-plugin-offline"
   ]
 };

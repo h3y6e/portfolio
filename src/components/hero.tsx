@@ -2,7 +2,6 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img, { FluidObject } from "gatsby-image";
 import styled from "@emotion/styled";
-import { css } from "@emotion/core";
 
 interface HeroData {
   hero: {
@@ -53,6 +52,14 @@ const Header = styled.header`
       width: 100vw;
     }
   }
+
+  .circle {
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-family: "Nico Moji";
+  }
 `;
 
 const Hero: React.FC = () => {
@@ -76,18 +83,13 @@ const Hero: React.FC = () => {
               <Img
                 fluid={data.hero.icon.childImageSharp.fluid}
                 alt="heyhoe"
-                css={css`
-                  border-radius: 50%;
-                `}
+                className="circle"
               />
             </figure>
             <h1
               data-sal="slide-right"
               data-sal-delay="200"
-              className="title is-1 has-text-weight-light"
-              css={css`
-                font-family: "Nico Moji";
-              `}
+              className="title is-1 has-text-weight-light "
             >
               {data.hero.name}
             </h1>
