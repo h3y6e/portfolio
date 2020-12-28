@@ -16,6 +16,13 @@ module.exports = {
     fbAppId: config.facebookAppId
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: config.googleAnalyticsID,
+        head: true
+      }
+    },
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
@@ -27,15 +34,8 @@ module.exports = {
         path: `${__dirname}/config`
       }
     },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: config.googleAnalyticsID
-      }
-    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
@@ -55,9 +55,7 @@ module.exports = {
         once: true
       }
     },
-    "gatsby-plugin-netlify",
     "gatsby-plugin-sass",
-    "gatsby-plugin-remove-trailing-slashes",
     "gatsby-plugin-smoothscroll",
     {
       resolve: "gatsby-plugin-manifest",
@@ -65,22 +63,14 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: config.startUrl,
-        background_color: config.backgroundColor,
+        lang: "ja",
         theme_color: config.themeColor,
         display: "standalone",
         icon: "static/logos/favicon.png",
-        icon_options: {
-          purpose: "maskable"
-        }
+        start_url: config.startUrl,
+        background_color: config.backgroundColor
       }
     },
-    "gatsby-plugin-offline",
-    {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-      options: {
-        devMode: true
-      }
-    }
+    "gatsby-plugin-offline"
   ]
 };
