@@ -1,0 +1,6 @@
+{
+  "prettier.configPath": ".prettierrc.yml",
+  "prettier.ignorePath": ".gitignore",
+  "prettier.packageManager": "yarn",
+  "editor.formatOnSave": true
+}
