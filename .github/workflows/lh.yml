@@ -1,0 +1,18 @@
+name: lh
+on: pull_request
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --ignore-optional
+
+      - name: Build
+        run: yarn build
+
+      - name: Run Lighthouse CI
+        run: yarn lh
