@@ -37,18 +37,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Montserrat", "Noto Sans JP", "Fira Code"]
-        },
-        custom: {
-          families: ["Nico Moji"],
-          urls: ["https://fonts.googleapis.com/earlyaccess/nicomoji.css"]
-        }
-      }
-    },
-    {
       resolve: "gatsby-plugin-scroll-reveal",
       options: {
         threshold: 0.5,
@@ -67,10 +55,20 @@ module.exports = {
         theme_color: config.themeColor,
         display: "standalone",
         icon: "static/logos/favicon.png",
+        icon_options: {
+          purpose: `maskable`
+        },
         start_url: config.startUrl,
         background_color: config.backgroundColor
       }
     },
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://fonts.googleapis.com/", "https://fonts.gstatic.com/"]
+      }
+    },
+    "gatsby-plugin-remove-trailing-slashes",
     "gatsby-plugin-offline"
   ]
 };

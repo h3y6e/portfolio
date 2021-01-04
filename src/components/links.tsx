@@ -9,10 +9,10 @@ import {
   faGithub,
   faAmazon
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPenNib } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faTwitter, faInstagram, faGithub, faAmazon);
-library.add(faEnvelope);
+library.add(faEnvelope, faPenNib);
 
 interface LinksData {
   links: {

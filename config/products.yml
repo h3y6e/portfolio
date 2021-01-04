@@ -1,5 +1,6 @@
 - title: ARタテカン
-  content: 絶対に撤去されないタテカン．京都新聞やNHK，様々なニュースサイトで紹介された．
+  content: |
+    絶対に撤去されないタテカン. 京都新聞やNHK, 様々なニュースサイトで紹介された.
   link: https://www.google.com/search?q=AR%E3%82%BF%E3%83%86%E3%82%AB%E3%83%B3
   img: ./images/products/artatekan.jpg
   tags:
@@ -8,7 +9,8 @@
   code: null
 
 - title: AR折田先生像
-  content: 絶対に撤去されない折田先生像．様々なニュースサイトで紹介された．
+  content: |
+    絶対に撤去されない折田先生像. 様々なニュースサイトで紹介された.
   link: https://twitter.com/5ebec/status/1099505242566094848?s=20
   img: ./images/products/arorita.jpg
   tags:
@@ -17,7 +19,9 @@
   code: https://github.com/5ebec/AROritaSensei
 
 - title: Ameyadar
-  content: 各種SNSアカウント名に京都大学上空の予想降水量に応じた絵文字を貼付する．Twitterで運用中．
+  content:
+    各種SNSアカウント名にNAIST上空の予想降水量に応じた絵文字を貼付する.
+    Twitterで運用中.
   link: https://twitter.com/5ebec
   img: ./images/products/ameyadar.jpg
   tags:
@@ -25,8 +29,7 @@
   code: https://github.com/5ebec/Ameyadar
 
 - title: 単位取得率bot
-  content:
-    Twitter:@5ebec 宛に京大の講義名をツイートすると単位取得率を教えてくれる．
+  content: 5ebec宛に京大の講義名をツイートすると単位取得率を教えてくれる.
   link: https://twitter.com/5ebec
   img: ./images/products/tannishutoku.jpg
   tags:
@@ -34,8 +37,9 @@
   code: null
 
 - title: AR名刺
-  content: |
-    QRコードがwebアプリのURL兼ARマーカーになっており，QRコードリーダで読み取ると名刺上に情報を表示することが出来る．
+  content:
+    QRコードがwebアプリのURL兼ARマーカーになっており,
+    QRコードリーダで読み取ると名刺上に情報を表示することが出来る.
   link: https://arcard.5ebec.dev
   img: ./images/products/arcard.jpg
   tags:
@@ -44,11 +48,19 @@
   code: https://github.com/5ebec/ARCard
 
 - title: a5e.be/c
-  content: |
-    ポートフォリオサイト．GatsbyとBulmaによって作成．
+  content: ポートフォリオサイト. GatsbyとBulmaによって作成.
   link: https://a5e.be/c
   img: ./images/products/portfolio.jpg
   tags:
     - TypeScript
     - React
   code: https://github.com/5ebec/portfolio
+
+- title: "#a5ebec"
+  content: ブログ. Franklin.jlによって作成.
+  link: https://blog.5ebec.dev
+  img: ./images/products/blog.jpg
+  tags:
+    - Julia
+    - Franklin.jl
+  code: https://github.com/5ebec/blog

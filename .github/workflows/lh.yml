@@ -11,8 +11,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --ignore-optional
 
-      - name: Build
-        run: yarn build
-
       - name: Run Lighthouse CI
         run: yarn lh
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

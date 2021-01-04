@@ -55,11 +55,11 @@ const Products: React.FC = () => {
         Products
       </h1>
       <div className="container">
-        <div className="columns is-multiline">
+        <div className="columns is-multiline is-mobile">
           {data.products.nodes.map(item => (
             <div
               data-sal="zoom-in"
-              className="column is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd"
+              className="column is-half-mobile is-one-third-tablet is-one-quarter-widescreen is-one-fifth-fullhd"
             >
               <div className="card">
                 <div className="card-image">

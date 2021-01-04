@@ -1,6 +1,6 @@
 - date: April 2016 - September 2020
-  title: 京都大学工学部電気電子工学科 入学
-  content: null
+  title: 京都大学
+  content: 工学部 電気電子工学科
   link: https://www.s-ee.t.kyoto-u.ac.jp/
   color: success
 
@@ -25,40 +25,49 @@
   content: |
     C言語でのWindowsのカーネルモードデバイスドライバ開発
     C#言語でのWindowsのGUIアプリケーション開発
-  link: null
+  link: "#experiences"
   color: danger
 
 - date: August 2019
   title: セキュリティ・キャンプ全国大会2019
   content: |
-    独立行政法人情報処理推進機構(IPA)によるセキュリティ・キャンプ事業のメインイベント
+    独立行政法人情報処理推進機構によるセキュリティ・キャンプ事業のメインイベント
   link: https://www.ipa.go.jp/jinzai/camp/2019/zenkoku2019_index.html
   color: warning
 
 - date: December 2019 -
-  title: Webエンジニア (アルバイト)
+  title: Webエンジニア (契約社員)
   content: |
-    TypeScript, Reactでのフロントエンド開発
+    TypeScript, React, Vueでのフロントエンド開発
     チームビルディング，エンジニアリングマネジメント
-  link: null
+  link: "#experiences"
   color: danger
+
+- date: January 2020 -
+  title: CAMPHOR- コアメンバー
+  content: 京都のIT系学生コミュニティCAMPHOR-の運営
+  link: https://camph.net/
+  color: success
 
 - date: August 2020
   title: Cookpad Online Summer Internship 2020
   content: |
-    Webアプリ開発コース
-  link: null
+    Ruby on RailsによるWebアプリ開発
+    サービス開発
+  link: https://techlife.cookpad.com/entry/2020/09/16/100000
   color: danger
 
 - date: September 2020
   title: VOYAGE GROUP GrowthTech
   content: |
     チーム開発
-  link: null
+  link: https://voyagegroup.snar.jp/jobboard/detail.aspx?id=gOhDwyuFZ3o
   color: danger
 
 - date: October 2020 -
-  title: 奈良先端科学技術大学院大学 入学
-  content: null
-  link: https://www.naist.jp/
+  title: 奈良先端科学技術大学院大学
+  content: |
+    先端科学技術研究科 情報科学領域
+    Interactive Media Design Labに在籍
+  link: https://imdl.naist.jp/
   color: success

@@ -18,6 +18,17 @@ $black-bis: $black;
 $link: $java;
 
 // Fonts
+@font-face {
+  font-family: "Nico Moji";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.woff2")
+      format("woff2"),
+    url("https://fonts.gstatic.com/ea/nicomoji/v1/NicoMoji-Regular.woff")
+      format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Montserrat&family=Noto+Sans+JP&display=swap");
 $family-sans-serif: "Montserrat", "Noto Sans JP", BlinkMacSystemFont,
   -apple-system, system-ui, sans-serif;
 $family-monospace: "Fira Code", monospace;
