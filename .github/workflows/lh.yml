@@ -1,8 +1,8 @@
-name: lh
+name: Lighthouse CI
 on: pull_request
 
 jobs:
-  lighthouse:
+  lighthouse-ci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
