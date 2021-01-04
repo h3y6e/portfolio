@@ -74,6 +74,7 @@ module.exports = {
         background_color: config.backgroundColor
       }
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    "gatsby-plugin-remove-trailing-slashes"
   ]
 };
