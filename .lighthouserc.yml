@@ -6,7 +6,6 @@ ci:
     preset: lighthouse:recommended
     assertions:
       color-contrast: warn
-      crawlable-anchors: warn
       font-display: warn
       non-composited-animations: warn
       unminified-css: warn

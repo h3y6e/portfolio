@@ -25,7 +25,7 @@
   content: |
     C言語でのWindowsのカーネルモードデバイスドライバ開発
     C#言語でのWindowsのGUIアプリケーション開発
-  link: null
+  link: "#experiences"
   color: danger
 
 - date: August 2019
@@ -40,7 +40,7 @@
   content: |
     TypeScript, React, Vueでのフロントエンド開発
     チームビルディング，エンジニアリングマネジメント
-  link: null
+  link: "#experiences"
   color: danger
 
 - date: January 2020 -
