@@ -13,3 +13,5 @@ jobs:
 
       - name: Run Lighthouse CI
         run: yarn lh
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
