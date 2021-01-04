@@ -1,6 +1,6 @@
 ci:
   collect:
-    startServerCommand: yarn serve
+    startServerCommand: yarn prod
     url: http://localhost:9000/c/
   assert:
     preset: lighthouse:recommended
@@ -8,12 +8,9 @@ ci:
       color-contrast: warn
       crawlable-anchors: warn
       font-display: warn
+      non-composited-animations: warn
       unminified-css: warn
       unused-css-rules: warn
-      uses-rel-preconnect: warn
       uses-responsive-images: warn
-      uses-http2: warn
-      redirects-http: warn
-      unused-javascript: warn
   upload:
     target: temporary-public-storage
