@@ -37,18 +37,6 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Montserrat", "Noto Sans JP", "Fira Code"]
-        },
-        custom: {
-          families: ["Nico Moji"],
-          urls: ["https://fonts.googleapis.com/earlyaccess/nicomoji.css"]
-        }
-      }
-    },
-    {
       resolve: "gatsby-plugin-scroll-reveal",
       options: {
         threshold: 0.5,
