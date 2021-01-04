@@ -32,3 +32,10 @@
   icon:
     - fab
     - amazon
+
+- title: Blog
+  link: https://blog.5ebec.dev
+  color: "#007e66"
+  icon:
+    - fas
+    - pen-nib
