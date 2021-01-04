@@ -74,7 +74,13 @@ module.exports = {
         background_color: config.backgroundColor
       }
     },
-    "gatsby-plugin-offline",
-    "gatsby-plugin-remove-trailing-slashes"
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://fonts.googleapis.com/", "https://fonts.gstatic.com/"]
+      }
+    },
+    "gatsby-plugin-remove-trailing-slashes",
+    "gatsby-plugin-offline"
   ]
 };

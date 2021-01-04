@@ -912,7 +912,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -6648,6 +6648,13 @@ gatsby-plugin-page-creator@^2.7.2:
     gatsby-telemetry "^1.7.1"
     globby "^11.0.1"
     lodash "^4.17.20"
+
+gatsby-plugin-preconnect@^1.1.54:
+  version "1.1.54"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.1.54.tgz#36426496480490863835746a50ad04993bccfb58"
+  integrity sha512-AbkeOoqTVK6++YOaXv0Ax8G1VBNp2CuOpQ6mc00/M+GvvRiHCXLhhRQ7RfgzbQYD3w7LOs2dd0ShOdOmgltO+Q==
+  dependencies:
+    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-react-helmet@3.7.0:
   version "3.7.0"
