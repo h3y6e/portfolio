@@ -67,6 +67,9 @@ module.exports = {
         theme_color: config.themeColor,
         display: "standalone",
         icon: "static/logos/favicon.png",
+        icon_options: {
+          purpose: `maskable`
+        },
         start_url: config.startUrl,
         background_color: config.backgroundColor
       }
