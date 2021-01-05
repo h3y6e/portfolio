@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
       <div className="navbar-brand">
         <a
           data-sal="slide-right"
-          className="navbar-item has-text-weight-semibold"
+          className="navbar-item has-text-weight-semibold is-size-6"
           onClick={(): void => {
             scrollTo("#top");
             setIsActive(false);

@@ -34,6 +34,7 @@ $family-sans-serif: "Montserrat", "Noto Sans JP", BlinkMacSystemFont,
 $family-monospace: "Fira Code", monospace;
 $family-primary: $family-sans-serif;
 $family-code: $family-monospace;
+$body-font-size: 0.9em;
 
 @import "bulma";
 @import "bulma-timeline";

@@ -33,7 +33,7 @@ const About: React.FC = ({ children }) => {
       <h1 data-sal="zoom-in" className="title">
         {data.about.title}
       </h1>
-      <p data-sal="zoom-in" className="content">
+      <p data-sal="zoom-in" className="content is-size-6">
         {data.about.content1}
         <Br />
         {data.about.content2}
