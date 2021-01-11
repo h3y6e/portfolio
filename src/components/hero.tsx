@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
             <h1
               data-sal="slide-right"
               data-sal-delay="200"
-              className="title is-1 has-text-weight-light "
+              className="title is-1 has-text-weight-light"
             >
               {data.hero.name}
             </h1>
