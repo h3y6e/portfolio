@@ -39,7 +39,7 @@
     "gatsby-plugin-remove-trailing-slashes": "2.9.0",
     "gatsby-plugin-sass": "2.8.0",
     "gatsby-plugin-scroll-reveal": "0.0.7",
-    "gatsby-plugin-sharp": "2.13.1",
+    "gatsby-plugin-sharp": "2.13.4",
     "gatsby-plugin-smoothscroll": "1.2.0",
     "gatsby-plugin-typescript": "2.11.0",
     "gatsby-source-filesystem": "2.10.0",
