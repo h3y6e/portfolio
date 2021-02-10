@@ -1,12 +1,21 @@
-- langs:
+- category: langs
+  contents:
     - C
+    - C#
     - Python
     - Julia
     - JavaScript
     - TypeScript
     - HTML + CSS
     - Swift
-    - Scala
     - LabVIEW
     - Whitespace
-    - Japanese
+
+- category: tools
+  contents:
+    - GitHub
+    - GCP
+    - Docker
+    - Unity
+    - Hololens
+    - Keyboards
