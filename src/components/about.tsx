@@ -20,12 +20,6 @@ const query = graphql`
   }
 `;
 
-const Br = styled.br`
-  @media (max-width: 70rem) {
-    display: none;
-  }
-`;
-
 const About: React.FC = ({ children }) => {
   const data: AboutData = useStaticQuery(query);
   return (
@@ -35,7 +29,7 @@ const About: React.FC = ({ children }) => {
       </h1>
       <p data-sal="zoom-in" className="content is-size-6">
         {data.about.content1}
-        <Br />
+        <br />
         {data.about.content2}
       </p>
       {children}
