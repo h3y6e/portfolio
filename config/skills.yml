@@ -3,6 +3,7 @@
     - C
     - C#
     - Python
+    - Go
     - Julia
     - JavaScript
     - TypeScript
@@ -16,6 +17,7 @@
     - GitHub
     - GCP
     - Docker
+    - Terraform
     - Unity
     - Hololens
     - Keyboards
