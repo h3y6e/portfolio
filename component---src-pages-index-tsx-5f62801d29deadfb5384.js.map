@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/index.tsx"],"names":["Index"],"mappings":"2FAAA,4CAIeA,UAFS,kBAAM","file":"component---src-pages-index-tsx-5f62801d29deadfb5384.js","sourcesContent":["import React from \"react\";\n\nconst Index: React.FC = () => <></>;\n\nexport default Index;\n"],"sourceRoot":""}
