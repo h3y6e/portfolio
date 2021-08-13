@@ -34,6 +34,7 @@ module.exports = {
         path: `${__dirname}/config`
       }
     },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

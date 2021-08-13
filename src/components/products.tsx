@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import styled from "@emotion/styled";
 
 interface ProductsData {
@@ -11,7 +11,7 @@ interface ProductsData {
       link: string;
       img: {
         childImageSharp: {
-          fluid: FluidObject;
+          gatsbyImageData: IGatsbyImageData;
         };
       };
       tags: string[];
@@ -29,9 +29,11 @@ const query = graphql`
         link
         img {
           childImageSharp {
-            fluid(quality: 90) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
+            gatsbyImageData(
+              layout: FULL_WIDTH
+              formats: [AUTO, WEBP, AVIF]
+              placeholder: BLURRED
+            )
           }
         }
         tags
@@ -64,7 +66,10 @@ const Products: React.FC = () => {
               <div className="card">
                 <div className="card-image">
                   <figure className="image">
-                    <Img fluid={item.img.childImageSharp.fluid} />
+                    <GatsbyImage
+                      image={item.img.childImageSharp.gatsbyImageData}
+                      alt="product images"
+                    />
                   </figure>
                 </div>
                 <div className="card-content">
