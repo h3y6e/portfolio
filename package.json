@@ -2,7 +2,6 @@
   "name": "portfolio",
   "private": true,
   "description": "5ebec's portfolio",
-  "version": "1.0.0",
   "author": "5ebec",
   "scripts": {
     "dev": "gatsby develop",
