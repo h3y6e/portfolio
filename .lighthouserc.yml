@@ -10,5 +10,6 @@ ci:
       unminified-css: warn
       unused-css-rules: warn
       uses-responsive-images: warn
+      csp-xss: warn
   upload:
     target: temporary-public-storage
