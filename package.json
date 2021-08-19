@@ -32,7 +32,7 @@
     "gatsby-plugin-emotion": "6.12.0",
     "gatsby-plugin-google-analytics": "3.11.0",
     "gatsby-plugin-manifest": "3.12.0",
-    "gatsby-plugin-offline": "4.11.0",
+    "gatsby-plugin-offline": "4.12.0",
     "gatsby-plugin-preconnect": "1.2.1",
     "gatsby-plugin-react-helmet": "4.12.0",
     "gatsby-plugin-remove-trailing-slashes": "3.11.0",
