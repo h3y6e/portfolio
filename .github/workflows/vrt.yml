@@ -1,8 +1,5 @@
 name: Visual Regression Test
-
-on:
-  pull_request:
-    branches: [master]
+on: pull_request
 
 jobs:
   start-server-and-test:
@@ -16,3 +13,5 @@ jobs:
 
       - name: Start server and test
         run: yarn vrt:start
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
