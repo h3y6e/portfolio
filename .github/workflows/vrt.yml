@@ -1,0 +1,18 @@
+name: Visual Regression Test
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  start-server-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install --pure-lockfile
+
+      - name: Start server and test
+        run: yarn vrt:start
