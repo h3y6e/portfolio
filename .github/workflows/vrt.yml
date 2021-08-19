@@ -1,5 +1,10 @@
 name: Visual Regression Test
-on: pull_request
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
 
 jobs:
   start-server-and-test:
