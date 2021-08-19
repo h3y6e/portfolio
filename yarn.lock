@@ -6135,12 +6135,12 @@ gatsby-page-utils@^1.11.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-emotion@6.11.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.11.0.tgz#8cf10d45b46e21d6afed08ec8577a316fb074977"
-  integrity sha512-mZ7arzH4F7CAvXc4rCad2v8AtanFvatB5U0P68EiB6LrTljMAuNmQWOlKlwTTP3iAX3kynreHYs/fXVSpxdH5g==
+gatsby-plugin-emotion@6.12.0:
+  version "6.12.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.12.0.tgz#9a3c492f25d011635419b5028e71255aca97b0e3"
+  integrity sha512-UryB9hmUU+MRyLVJS9/C2G1d8RlNAlzDSBZxCt/TqvesfXz9ObcutJ8LFvALrAGn5mxfuPIuJBCJY4Al4dbMxA==
   dependencies:
-    "@babel/runtime" "^7.14.6"
+    "@babel/runtime" "^7.14.8"
     "@emotion/babel-preset-css-prop" "^11.2.0"
 
 gatsby-plugin-google-analytics@3.11.0:
