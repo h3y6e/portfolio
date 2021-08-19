@@ -5,17 +5,17 @@
   "author": "5ebec",
   "scripts": {
     "dev": "gatsby develop",
-    "start": "gatsby develop -o",
-    "clean": "gatsby clean",
+    "clean": "gatsby clean && rimraf .lighthouseci",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve --prefix-paths",
-    "prod": "run-s clean build serve",
+    "start": "run-s clean build serve",
     "type-check": "tsc --pretty",
     "format": "prettier --write '**/*.{js,ts,tsx,json,yml,md}' --ignore-path .gitignore",
     "lint": "eslint . --ext .js,.ts,.tsx --ignore-path .gitignore",
     "fix": "yarn lint --fix",
     "lh": "lhci autorun",
-    "clean:lh": "rimraf .lighthouseci"
+    "vrt": "percy exec -- node puppeteer.js",
+    "vrt:start": "start-server-and-test :9000 vrt"
   },
   "dependencies": {
     "@emotion/react": "11.4.1",
@@ -51,6 +51,8 @@
     "typescript": "4.3.5"
   },
   "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.65",
+    "@percy/puppeteer": "^2.0.0",
     "@types/node": "16.6.1",
     "@types/react": "17.0.18",
     "@types/react-dom": "17.0.9",
@@ -60,7 +62,10 @@
     "eslint": "7.32.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.3.2",
-    "rimraf": "3.0.2"
+    "puppeteer": "^10.2.0",
+    "rimraf": "3.0.2",
+    "scroll-to-bottomjs": "^1.1.0",
+    "start-server-and-test": "^1.13.1"
   },
   "repository": {
     "type": "git",
