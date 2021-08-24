@@ -26,7 +26,6 @@ jobs:
         with:
           # Check out the pull request HEAD
           ref: ${{ github.event.pull_request.head.sha }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: yarn install --pure-lockfile
