@@ -5,13 +5,28 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  pull_request_target:
+    branches: [master]
+
+permissions:
+  contents: read
 
 jobs:
   start-server-and-test:
     runs-on: ubuntu-latest
+    if: |
+      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]') ||
+      (github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]')
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        if: ${{ github.event_name != 'pull_request_target' }}
+
+      - uses: actions/checkout@v2
+        if: ${{ github.event_name == 'pull_request_target' }}
+        with:
+          # Check out the pull request HEAD
+          ref: ${{ github.event.pull_request.head.sha }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: yarn install --pure-lockfile

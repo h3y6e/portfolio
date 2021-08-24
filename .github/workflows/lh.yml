@@ -1,12 +1,28 @@
 name: Lighthouse CI
-on: pull_request
+
+on:
+  - pull_request
+  - pull_request_target
+
+permissions:
+  contents: read
 
 jobs:
   lighthouse-ci:
     runs-on: ubuntu-latest
+    if: |
+      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]') ||
+      (github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]')
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        if: ${{ github.event_name != 'pull_request_target' }}
+
+      - uses: actions/checkout@v2
+        if: ${{ github.event_name == 'pull_request_target' }}
+        with:
+          # Check out the pull request HEAD
+          ref: ${{ github.event.pull_request.head.sha }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile --ignore-optional
