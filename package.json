@@ -53,7 +53,7 @@
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.65",
     "@percy/puppeteer": "^2.0.0",
-    "@types/node": "16.6.2",
+    "@types/node": "16.7.1",
     "@types/react": "17.0.19",
     "@types/react-dom": "17.0.9",
     "@types/react-helmet": "6.1.2",
