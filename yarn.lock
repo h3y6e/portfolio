@@ -3150,7 +3150,7 @@ babel-plugin-polyfill-regenerator@^0.2.2:
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.2.2"
 
-babel-plugin-remove-graphql-queries@^3.12.0, babel-plugin-remove-graphql-queries@^3.13.0:
+babel-plugin-remove-graphql-queries@^3.13.0:
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-3.13.0.tgz#fd0cde2d1090bc76944586ace2378086b14a0bba"
   integrity sha512-6kznO5vqrcVAZLwwJwDev4QyjjRhW+G665NZgdUsjF/j9pikyZ5zp58c75wijkY7eXH2W1lhzd4GS3zxLQibCQ==
@@ -6256,10 +6256,10 @@ gatsby-page-utils@^1.13.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-emotion@6.12.0:
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.12.0.tgz#9a3c492f25d011635419b5028e71255aca97b0e3"
-  integrity sha512-UryB9hmUU+MRyLVJS9/C2G1d8RlNAlzDSBZxCt/TqvesfXz9ObcutJ8LFvALrAGn5mxfuPIuJBCJY4Al4dbMxA==
+gatsby-plugin-emotion@6.13.0:
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.13.0.tgz#ae5ea36bc97a92f7079551eb17f693b97e1fe8cd"
+  integrity sha512-sYN5UbarZn72TaKWMPz3EFtU1uqi7KqmJfG59o8DRhacfL5fnzMu7OTKwZq3f58p29wg2v5OQ9zpWZFTy7dSog==
   dependencies:
     "@babel/runtime" "^7.14.8"
     "@emotion/babel-preset-css-prop" "^11.2.0"
@@ -6384,20 +6384,7 @@ gatsby-plugin-smoothscroll@1.2.0:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-gatsby-plugin-typescript@3.12.0:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-3.12.0.tgz#fad15b7a6d6495949f7b3fc528b57d6054d463eb"
-  integrity sha512-lkOV3uL6vhGsYIWIJIRNTr1yjTwu6Ci/iERKk4x91vNc9hCMD9dAVt1HyCc6g4jPS6uVVsqM9VUd8HqEnCPcLw==
-  dependencies:
-    "@babel/core" "^7.14.8"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.14.5"
-    "@babel/plugin-proposal-numeric-separator" "^7.14.5"
-    "@babel/plugin-proposal-optional-chaining" "^7.14.5"
-    "@babel/preset-typescript" "^7.14.0"
-    "@babel/runtime" "^7.14.8"
-    babel-plugin-remove-graphql-queries "^3.12.0"
-
-gatsby-plugin-typescript@^3.13.0:
+gatsby-plugin-typescript@3.13.0, gatsby-plugin-typescript@^3.13.0:
   version "3.13.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-3.13.0.tgz#8973d948c5327b8be7062b03ae97b261b775500e"
   integrity sha512-qYE5ZdpV8XdbEXRjkpD7aiDwDRVnhdYzBSrTDUmjfTrwUK+QmZ7BxDQjic+hA5fjTMDMgLR+dYmvwotkqp8hxA==
