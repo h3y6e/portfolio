@@ -15,7 +15,8 @@
 - category: tools
   contents:
     - GitHub
-    - GCP
+    - Google Cloud
+    - AWS
     - Docker
     - Terraform
     - Unity
