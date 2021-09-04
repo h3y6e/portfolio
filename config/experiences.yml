@@ -50,7 +50,7 @@
   color: success
 
 - date: August 2020
-  title: Cookpad Online Summer Internship 2020
+  title: クックパッド株式会社
   content: |
     Ruby on RailsによるWebアプリ開発
     サービス開発
@@ -58,7 +58,7 @@
   color: danger
 
 - date: September 2020
-  title: VOYAGE GROUP GrowthTech
+  title: 株式会社 VOYAGE GROUP
   content: |
     チーム開発
   link: https://voyagegroup.snar.jp/jobboard/detail.aspx?id=gOhDwyuFZ3o
@@ -71,3 +71,17 @@
     Interactive Media Design Labに在籍
   link: https://imdl.naist.jp/
   color: success
+
+- date: August 2021
+  title: サイボウズ株式会社
+  content: |
+    生産性向上チーム
+  link: https://cybozu.co.jp/company/job/recruitment/intern/2021/
+  color: danger
+
+- date: August 2021
+  title: 株式会社はてな
+  content: |
+    システムプラットフォーム部
+  link: https://hatenacorp.jp/recruit/intern/2021
+  color: danger
