@@ -6083,12 +6083,12 @@ gatsby-plugin-react-helmet@4.13.0:
   dependencies:
     "@babel/runtime" "^7.14.8"
 
-gatsby-plugin-remove-trailing-slashes@3.13.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-3.13.0.tgz#99f2d3dd192ca9eb29f7b8582af5de8aa7e4ed6a"
-  integrity sha512-WylLS+lCxFbSuWPmEe5GW9UmRCsw9Bkm+WQ1s6WP0JCbEK+mKnIWwQkmIHmiUnVbe35p9wDC3dBKKJ5uHg79jQ==
+gatsby-plugin-remove-trailing-slashes@3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-trailing-slashes/-/gatsby-plugin-remove-trailing-slashes-3.14.0.tgz#185abf2790e6421f39c3cfeab6f7d1f64a61ca96"
+  integrity sha512-NINYtaIKiT1FJONj4+erqVUlG6ih5h4Ke0EF410P/gNozLU0zHmAkfOtCzsBcBsbYgCVqPgW1cflF3gZvauotQ==
   dependencies:
-    "@babel/runtime" "^7.14.8"
+    "@babel/runtime" "^7.15.4"
 
 gatsby-plugin-sass@4.14.0:
   version "4.14.0"
@@ -10849,10 +10849,10 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@1.39.2:
-  version "1.39.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.39.2.tgz#1681964378f58d76fc64a6a502619bd5ac99f660"
-  integrity sha512-4/6Vn2RPc+qNwSclUSKvssh7dqK1Ih3FfHBW16I/GfH47b3scbYeOw65UIrYG7PkweFiKbpJjgkf5CV8EMmvzw==
+sass@1.41.1:
+  version "1.41.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.41.1.tgz#bca5bed2154192779c29f48fca9c644c60c38d98"
+  integrity sha512-vIjX7izRxw3Wsiez7SX7D+j76v7tenfO18P59nonjr/nzCkZuoHuF7I/Fo0ZRZPKr88v29ivIdE9BqGDgQD/Nw==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
