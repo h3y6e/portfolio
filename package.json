@@ -24,7 +24,7 @@
     "@fortawesome/free-brands-svg-icons": "5.15.4",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/react-fontawesome": "0.1.15",
-    "@lhci/cli": "0.8.1",
+    "@lhci/cli": "0.8.2",
     "bulma": "0.9.3",
     "bulma-timeline": "3.0.4",
     "gatsby": "3.14.1",
