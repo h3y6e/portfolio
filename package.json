@@ -23,7 +23,7 @@
     "@fortawesome/fontawesome-svg-core": "1.2.36",
     "@fortawesome/free-brands-svg-icons": "5.15.4",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
-    "@fortawesome/react-fontawesome": "0.1.15",
+    "@fortawesome/react-fontawesome": "0.1.16",
     "@lhci/cli": "0.8.2",
     "bulma": "0.9.3",
     "bulma-timeline": "3.0.4",
@@ -47,7 +47,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-helmet": "6.1.0",
-    "sass": "1.43.2",
+    "sass": "1.43.3",
     "typescript": "4.4.4"
   },
   "devDependencies": {
