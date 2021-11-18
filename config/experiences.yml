@@ -23,23 +23,31 @@
 - date: March 2019 - December 2019
   title: ソフトウェアエンジニア (アルバイト)
   content: |
-    C言語でのWindowsのカーネルモードデバイスドライバ開発
-    C#言語でのWindowsのGUIアプリケーション開発
+    Windows カーネルモードデバイスドライバ開発
+    Windows GUIアプリケーション開発
   link: "#experiences"
   color: danger
+
+- date: April 2019 - September 2020
+  title: Computer Vision Laboratory
+  content: 京都大学 工学部 電気電子工学科
+  link: https://vision.ist.i.kyoto-u.ac.jp
+  color: success
 
 - date: August 2019
   title: セキュリティ・キャンプ全国大会2019
   content: |
-    独立行政法人情報処理推進機構によるセキュリティ・キャンプ事業のメインイベント
+    独立行政法人情報処理推進機構
+    セキュリティ・キャンプ事業 メインイベント
   link: https://www.ipa.go.jp/jinzai/camp/2019/zenkoku2019_index.html
   color: warning
 
-- date: December 2019 -
+- date: December 2019 - December 2021
   title: Webエンジニア (契約社員)
   content: |
-    TypeScript, React, Vueでのフロントエンド開発
-    チームビルディング，エンジニアリングマネジメント
+    フロントエンドエンジニア
+    チームビルディング
+    エンジニアリングマネジメント
   link: "#experiences"
   color: danger
 
@@ -50,38 +58,57 @@
   color: success
 
 - date: August 2020
-  title: クックパッド株式会社
+  title: クックパッド株式会社 (インターン)
   content: |
-    Ruby on RailsによるWebアプリ開発
+    Webアプリ開発
     サービス開発
   link: https://techlife.cookpad.com/entry/2020/09/16/100000
   color: danger
 
 - date: September 2020
-  title: 株式会社 VOYAGE GROUP
+  title: 株式会社 VOYAGE GROUP (インターン)
   content: |
     チーム開発
+    フルサイクルデベロッパー
   link: https://voyagegroup.snar.jp/jobboard/detail.aspx?id=gOhDwyuFZ3o
   color: danger
 
 - date: October 2020 -
-  title: 奈良先端科学技術大学院大学
+  title: Interactive Media Design Laboratory
   content: |
+    奈良先端科学技術大学院大学
     先端科学技術研究科 情報科学領域
-    Interactive Media Design Labに在籍
   link: https://imdl.naist.jp/
   color: success
 
 - date: August 2021
-  title: サイボウズ株式会社
+  title: サイボウズ株式会社 (インターン)
   content: |
     生産性向上チーム
-  link: https://cybozu.co.jp/company/job/recruitment/intern/2021/
+    インフラエンジニア
+  link: https://cybozu.co.jp/company/job/recruitment/intern/2021/improvement.html
   color: danger
 
 - date: August 2021
-  title: 株式会社はてな
+  title: 株式会社はてな (インターン)
   content: |
     システムプラットフォーム部
+    SRE
+  link: https://hatenacorp.jp/recruit/intern/2021
+  color: danger
+
+- date: September 2021
+  title: 株式会社ミクシィ (インターン)
+  content: |
+    ライブエクスペリエンス事業本部 システム部 Fansta開発G
+    フルスタックエンジニア
+  link: https://hatenacorp.jp/recruit/intern/2021
+  color: danger
+
+- date: October 2021 - November 2021
+  title: 株式会社ビズリーチ (インターン)
+  content: |
+    ビズリーチ事業部 プロダクト開発部 システム横断G
+    バックエンドエンジニア
   link: https://hatenacorp.jp/recruit/intern/2021
   color: danger
