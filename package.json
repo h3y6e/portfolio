@@ -26,7 +26,7 @@
     "@fortawesome/react-fontawesome": "0.1.16",
     "@lhci/cli": "0.8.2",
     "bulma": "0.9.3",
-    "bulma-timeline": "3.0.4",
+    "bulma-timeline": "3.0.5",
     "gatsby": "3.14.6",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-emotion": "6.14.0",
