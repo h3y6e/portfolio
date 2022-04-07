@@ -6,8 +6,8 @@ module.exports = {
   startUrl: `/c`,
   siteLanguage: `ja`,
   siteLogo: `static/logos/logo.jpg`,
-  siteDescription: `5ebec's portfolio`,
-  author: `5ebec`,
+  siteDescription: `heyhoe's portfolio`,
+  author: `heyhoe`,
 
   userTwitter: `@5ebec`,
   facebookAppId: `2343092932649003`,

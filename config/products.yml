@@ -16,7 +16,7 @@
   tags:
     - Swift
     - ARKit2
-  code: https://github.com/5ebec/AROritaSensei
+  code: https://github.com/h3y6e/AROritaSensei
 
 - title: Ameyadar
   content:
@@ -26,7 +26,7 @@
   img: ./images/products/ameyadar.jpg
   tags:
     - Python3
-  code: https://github.com/5ebec/Ameyadar
+  code: https://github.com/h3y6e/Ameyadar
 
 - title: 単位取得率bot
   content: 5ebec宛に京大の講義名をツイートすると単位取得率を教えてくれる.
@@ -45,7 +45,7 @@
   tags:
     - AR.js
     - A-Frame
-  code: https://github.com/5ebec/ARCard
+  code: https://github.com/h3y6e/ARCard
 
 - title: a5e.be/c
   content: ポートフォリオサイト. GatsbyとBulmaによって作成.
@@ -54,7 +54,7 @@
   tags:
     - TypeScript
     - React
-  code: https://github.com/5ebec/portfolio
+  code: https://github.com/h3y6e/portfolio
 
 - title: "#a5ebec"
   content: ブログ. Franklin.jlによって作成.
@@ -63,4 +63,4 @@
   tags:
     - Julia
     - Franklin.jl
-  code: https://github.com/5ebec/blog
+  code: https://github.com/h3y6e/blog
