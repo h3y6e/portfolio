@@ -1,7 +1,7 @@
 ci:
   collect:
     startServerCommand: yarn start
-    url: http://localhost:9000/c
+    url: http://localhost:9000/
   assert:
     preset: lighthouse:recommended
     assertions:
@@ -11,5 +11,7 @@ ci:
       unused-css-rules: warn
       uses-responsive-images: warn
       csp-xss: warn
+      crawlable-anchors: warn
+      lcp-lazy-loaded: warn
   upload:
     target: temporary-public-storage

@@ -16,13 +16,6 @@ module.exports = {
     fbAppId: config.facebookAppId
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: config.googleAnalyticsID,
-        head: true
-      }
-    },
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
@@ -68,7 +61,6 @@ module.exports = {
         domains: ["https://fonts.googleapis.com/", "https://fonts.gstatic.com/"]
       }
     },
-    "gatsby-plugin-remove-trailing-slashes",
     "gatsby-plugin-offline"
   ]
 };

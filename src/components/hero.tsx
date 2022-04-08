@@ -54,6 +54,7 @@ const Header = styled.header`
   }
 
   .circle {
+    z-index: 1;
     border-radius: 50%;
   }
 
@@ -95,7 +96,7 @@ const Hero: React.FC = () => {
             </h1>
             <h2
               data-sal="slide-right"
-              data-sal-delay="400"
+              data-sal-delay="300"
               className="subtitle is-4"
             >
               {data.hero.desc}

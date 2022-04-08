@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
             setIsActive(false);
           }}
         >
-          a5e<Strong>.</Strong>be<Strong>/</Strong>c
+          h3y6e<Strong>.</Strong>com
         </a>
         <a
           role="button"
