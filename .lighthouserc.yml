@@ -11,5 +11,7 @@ ci:
       unused-css-rules: warn
       uses-responsive-images: warn
       csp-xss: warn
+      crawlable-anchors: warn
+      lcp-lazy-loaded: warn
   upload:
     target: temporary-public-storage
