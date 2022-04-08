@@ -6,7 +6,7 @@ const scrollToBottom = require("scroll-to-bottomjs");
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await page.goto("http://localhost:9000/c");
+  await page.goto("http://localhost:9000/");
   await percySnapshot(page, "First sight");
   await page.evaluate(scrollToBottom);
   await percySnapshot(page, "Lazy loading");

@@ -1,7 +1,7 @@
 ci:
   collect:
     startServerCommand: yarn start
-    url: http://localhost:9000/c
+    url: http://localhost:9000/
   assert:
     preset: lighthouse:recommended
     assertions:
