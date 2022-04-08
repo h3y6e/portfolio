@@ -11,7 +11,7 @@ const Footer: React.FC = () => (
   <footer className="footer">
     <div className="content has-text-centered is-family-monospace is-size-6">
       <p>
-        &copy; 2020-2021 <a href="https://github.com/h3y6e">heyhoe</a> <Br /> ::
+        &copy; 2020-2022 <a href="https://github.com/h3y6e">heyhoe</a> <Br /> ::
         Powered by <a href="https://www.gatsbyjs.org/">Gatsby</a> +{" "}
         <a href="https://bulma.io/">Bulma</a>
       </p>
