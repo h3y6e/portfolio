@@ -89,14 +89,14 @@ const Hero: React.FC = () => {
             </figure>
             <h1
               data-sal="slide-right"
-              data-sal-delay="150"
+              data-sal-delay="200"
               className="title is-1 has-text-weight-light"
             >
               {data.hero.name}
             </h1>
             <h2
               data-sal="slide-right"
-              data-sal-delay="200"
+              data-sal-delay="300"
               className="subtitle is-4"
             >
               {data.hero.desc}
