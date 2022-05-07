@@ -38,9 +38,8 @@
 
 - title: AR名刺
   content:
-    QRコードがwebアプリのURL兼ARマーカーになっており,
-    QRコードリーダで読み取ると名刺上に情報を表示することが出来る.
-  link: https://arcard.5ebec.dev
+    QRコードがURL兼ARマーカーになっており, 名刺上に情報を表示することが出来る.
+  link: https://arcard.h3y6e.com
   img: ./images/products/arcard.jpg
   tags:
     - AR.js
@@ -58,7 +57,7 @@
 
 - title: "#a5ebec"
   content: ブログ. Franklin.jlによって作成.
-  link: https://blog.5ebec.dev
+  link: https://blog.h3y6e.com
   img: ./images/products/blog.jpg
   tags:
     - Julia
