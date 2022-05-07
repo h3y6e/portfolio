@@ -2,15 +2,15 @@
   contents:
     - C
     - C#
+    - Swift
+    - Julia
     - Python
+    - JavaScript
+    - TypeScript
+    - Rust
     - Go
     - Java
-    - Julia
-    - JavaScript
     - Kotlin
-    - TypeScript
-    - HTML + CSS
-    - Swift
     - LabVIEW
     - Whitespace
 

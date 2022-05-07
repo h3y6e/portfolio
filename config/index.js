@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: `https://h3y6e.com`,
   startUrl: `/`,
   siteLanguage: `ja`,
-  siteLogo: `static/logos/logo.jpg`,
+  siteLogo: `static/logos/logo.png`,
   siteDescription: `heyhoe's portfolio`,
   author: `heyhoe`,
 
