@@ -11,10 +11,10 @@ module.exports = {
 
   userTwitter: `@5ebec`,
   facebookAppId: `2343092932649003`,
-  ogSiteName: `5ebec`,
+  ogSiteName: `h3y6e`,
   ogLanguage: `ja_JP`,
 
   // Manifest and Progress color
-  themeColor: `#a5ebec`,
-  backgroundColor: `#a5ebec`
+  themeColor: `#f6f6f6`,
+  backgroundColor: `#f6f6f6`
 };
