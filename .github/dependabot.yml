@@ -6,7 +6,7 @@ updates:
       interval: weekly
       time: "05:00"
       timezone: "Asia/Tokyo"
-    assignees:
+    reviewers:
       - h3y6e
   - package-ecosystem: github-actions
     directory: "/"
@@ -14,5 +14,5 @@ updates:
       interval: weekly
       time: "05:00"
       timezone: "Asia/Tokyo"
-    assignees:
+    reviewers:
       - h3y6e
