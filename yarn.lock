@@ -2198,10 +2198,10 @@
   resolved "https://registry.yarnpkg.com/@percy/logger/-/logger-1.9.0.tgz#945239dbaaf543e460a81fe5ba4a91ab8c6bb92e"
   integrity sha512-lnRE8PkvAjSriztJqUkVT+qNhGMjNK+UTL4aUYA/WVAYDLeQmhCRREHHc301X8sFyPIOyQ1KA1WzCEfFuHisaA==
 
-"@percy/puppeteer@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@percy/puppeteer/-/puppeteer-2.0.1.tgz#2a768e8675b6c1b1d5fddf448e4e3b82510e8e14"
-  integrity sha512-SEThoE2OxW39e1HBkI4z/jFXhYtNyxZ64z3jIR0dnkIY5z/NCjWkCDqW6nfsKhVA+cBT+QYAgBhDBLaKXzaKWg==
+"@percy/puppeteer@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@percy/puppeteer/-/puppeteer-2.0.2.tgz#3143e882d9e2250b8d934034e1af51c6992ef9de"
+  integrity sha512-DPyh5UyttPPXMNl3o6Owox7bnV54aQ7sIWfcsXUBZ6q1wLVmBjc5KP4x51dpPiuTDn3SMzFExMrXBFugfDJHPA==
   dependencies:
     "@percy/sdk-utils" "^1.0.0"
 
