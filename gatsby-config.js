@@ -55,12 +55,6 @@ module.exports = {
         background_color: config.backgroundColor
       }
     },
-    {
-      resolve: "gatsby-plugin-preconnect",
-      options: {
-        domains: ["https://fonts.googleapis.com/", "https://fonts.gstatic.com/"]
-      }
-    },
     "gatsby-plugin-offline"
   ]
 };
