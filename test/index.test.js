@@ -6,7 +6,7 @@ const platform = require("os").platform();
 const puppeteerArgs = /^win/.test(platform) ? [] : ["--single-process"];
 
 describe("Integration test with visual testing:", function () {
-  this.timeout(20000);
+  this.timeout(30000);
   let browser;
   let page;
 
