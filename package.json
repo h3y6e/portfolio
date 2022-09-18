@@ -51,7 +51,7 @@
     "typescript": "4.8.3"
   },
   "devDependencies": {
-    "@percy/cli": "^1.10.2",
+    "@percy/cli": "^1.10.3",
     "@percy/puppeteer": "^2.0.2",
     "@types/node": "18.7.17",
     "@types/react": "18.0.9",
