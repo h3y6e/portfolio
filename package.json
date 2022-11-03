@@ -18,7 +18,7 @@
     "vrt:start": "start-server-and-test :9000 vrt"
   },
   "dependencies": {
-    "@emotion/react": "11.10.4",
+    "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.4",
     "@fontsource/fira-code": "4.5.12",
     "@fontsource/montserrat": "4.5.13",
