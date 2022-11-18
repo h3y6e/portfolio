@@ -9,12 +9,12 @@ module.exports = {
   siteDescription: `heyhoe's portfolio`,
   author: `heyhoe`,
 
-  userTwitter: `@5ebec`,
+  userTwitter: `@h3y6e`,
   facebookAppId: `2343092932649003`,
   ogSiteName: `h3y6e`,
   ogLanguage: `ja_JP`,
 
   // Manifest and Progress color
   themeColor: `#f6f6f6`,
-  backgroundColor: `#f6f6f6`
+  backgroundColor: `#f6f6f6`,
 };
