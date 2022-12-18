@@ -6062,14 +6062,14 @@ gatsby-plugin-emotion@6.14.0:
     "@babel/runtime" "^7.15.4"
     "@emotion/babel-preset-css-prop" "^11.2.0"
 
-gatsby-plugin-manifest@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.14.0.tgz#1f17e35f2e51b86f627d74a6fd6ccfefc4968ddd"
-  integrity sha512-l++KGG/3/8iwUExJ8oXUHF5ra7P//xQkkhoDybUu3N7+9jpp9S2j4NWqJvgpMhRbh09zcUfuw7usII0sJO24lA==
+gatsby-plugin-manifest@3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.15.0.tgz#daf8fd825d871891e381ec9e45b82940aa24ca35"
+  integrity sha512-zvAwx45/IOMWOn9JfSU2b1HQF/Q8VaH8dBTCBIPILUEXSbpDad6z0HVBV++Z6ouLveUQCndTgWj/RRUCEqRSZg==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    gatsby-core-utils "^2.14.0"
-    gatsby-plugin-utils "^1.14.0"
+    gatsby-core-utils "^2.15.0"
+    gatsby-plugin-utils "^1.15.0"
     semver "^7.3.5"
     sharp "^0.29.0"
 
