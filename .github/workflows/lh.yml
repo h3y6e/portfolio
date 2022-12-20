@@ -10,6 +10,9 @@ permissions:
 jobs:
   lighthouse-ci:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]
     if: |
       (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]') ||
       (github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]')
@@ -22,6 +25,12 @@ jobs:
         with:
           # Check out the pull request HEAD
           ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile --ignore-optional
