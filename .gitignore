@@ -204,3 +204,4 @@ $RECYCLE.BIN/
 
 ### lighthouse ###
 .lighthouseci
+!.tool-versions
