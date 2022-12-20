@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: `https://h3y6e.com`,
   startUrl: `/`,
   siteLanguage: `ja`,
-  siteLogo: `static/logos/logo.png`,
+  siteLogo: `https://h3y6e.com/logos/logo.png`,
   siteDescription: `heyhoe's portfolio`,
   author: `heyhoe`,
 
@@ -16,5 +16,5 @@ module.exports = {
 
   // Manifest and Progress color
   themeColor: `#f6f6f6`,
-  backgroundColor: `#f6f6f6`,
+  backgroundColor: `#f6f6f6`
 };

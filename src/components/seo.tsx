@@ -1,8 +1,7 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-interface HelmetData {
+interface TData {
   site: {
     siteMetadata: {
       siteUrl: string;
@@ -36,7 +35,7 @@ const query = graphql`
   }
 `;
 
-const SEO: React.FC = () => {
+const Head: React.FC = () => {
   const {
     site: {
       siteMetadata: {
@@ -44,19 +43,18 @@ const SEO: React.FC = () => {
         title,
         description,
         image,
-        siteLanguage,
         ogLanguage,
         twitter,
         facebook,
         fbAppId
       }
     }
-  }: HelmetData = useStaticQuery(query);
+  }: TData = useStaticQuery(query);
 
   return (
-    <Helmet title={title}>
+    <>
+      <title>{title}</title>
       {/* meta */}
-      <html lang={siteLanguage} />
       <meta name="description" content={description} />
       <meta name="image" content={image} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -74,8 +72,8 @@ const SEO: React.FC = () => {
       {/* facebook */}
       <meta property="og:site_name" content={facebook} />
       <meta property="fb:app_id" content={fbAppId} />
-    </Helmet>
+    </>
   );
 };
 
-export default SEO;
+export { Head };

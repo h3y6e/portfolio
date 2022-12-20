@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img, { FluidObject } from "gatsby-image";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import styled from "@emotion/styled";
 
 interface HeroData {
@@ -9,12 +9,12 @@ interface HeroData {
     desc: string;
     bgImg: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
     icon: {
       childImageSharp: {
-        fluid: FluidObject;
+        gatsbyImageData: IGatsbyImageData;
       };
     };
   };
@@ -27,16 +27,12 @@ const query = graphql`
       desc
       bgImg {
         childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
         }
       }
       icon {
         childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
         }
       }
     }
@@ -69,8 +65,8 @@ const Hero: React.FC = () => {
     <Header>
       <section id="top" className="hero is-fullheight">
         <div className="hero-body">
-          <Img
-            fluid={data.hero.bgImg.childImageSharp.fluid}
+          <GatsbyImage
+            image={data.hero.bgImg.childImageSharp.gatsbyImageData}
             className="header-bg"
             alt="hero image"
             style={{ position: "absolute" }}
@@ -81,8 +77,8 @@ const Hero: React.FC = () => {
               data-sal-delay="100"
               className="image is-128x128"
             >
-              <Img
-                fluid={data.hero.icon.childImageSharp.fluid}
+              <GatsbyImage
+                image={data.hero.icon.childImageSharp.gatsbyImageData}
                 alt="heyhoe"
                 className="circle"
               />

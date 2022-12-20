@@ -17,7 +17,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-emotion",
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
     "gatsby-transformer-yaml",
     {
@@ -27,6 +26,7 @@ module.exports = {
         path: `${__dirname}/config`
       }
     },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -44,7 +44,7 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        lang: "ja",
+        lang: config.siteLanguage,
         theme_color: config.themeColor,
         display: "standalone",
         icon: "static/logos/favicon.png",
