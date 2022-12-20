@@ -19,7 +19,8 @@
   code: https://github.com/h3y6e/AROritaSensei
 
 - title: Ameyadar
-  content: 各種SNSアカウント名に生駒市上空の予想降水量に応じた絵文字を貼付する.
+  content:
+    各種SNSアカウント名に生駒市上空の予想降水量に応じた絵文字を貼付する.
     Twitterで運用中.
   link: https://twitter.com/h3y6e
   img: ./images/products/ameyadar.jpg
@@ -36,7 +37,8 @@
   code: null
 
 - title: AR名刺
-  content: QRコードがURL兼ARマーカーになっており, 名刺上に情報を表示することが出来る.
+  content:
+    QRコードがURL兼ARマーカーになっており, 名刺上に情報を表示することが出来る.
   link: https://arcard.h3y6e.com
   img: ./images/products/arcard.jpg
   tags:

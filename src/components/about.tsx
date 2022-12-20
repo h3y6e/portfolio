@@ -1,6 +1,10 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+interface Props {
+  children: React.ReactNode;
+}
+
 interface AboutData {
   about: {
     title: string;
@@ -19,7 +23,7 @@ const query = graphql`
   }
 `;
 
-const About: React.FC = ({ children }) => {
+const About: React.FC<Props> = ({ children }) => {
   const data: AboutData = useStaticQuery(query);
   return (
     <section id="about" className="section has-text-centered">

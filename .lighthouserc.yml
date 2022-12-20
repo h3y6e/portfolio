@@ -5,6 +5,7 @@ ci:
   assert:
     preset: lighthouse:recommended
     assertions:
+      unused-javascript: warn
       color-contrast: warn
       non-composited-animations: warn
       unminified-css: warn

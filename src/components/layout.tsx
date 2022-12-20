@@ -5,7 +5,11 @@ import "../styles/index.scss";
 import Navbar from "./navbar";
 import Footer from "./footer";
 
-const Layout: React.FC = ({ children }) => (
+interface Props {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<Props> = ({ children }) => (
   <>
     <Navbar />
     {children}

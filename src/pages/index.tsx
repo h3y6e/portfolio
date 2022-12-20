@@ -1,7 +1,5 @@
 import React from "react";
 
-// SEO
-import SEO from "../components/seo";
 // Components
 import Layout from "../components/layout";
 import Hero from "../components/hero";
@@ -13,7 +11,6 @@ import Skills from "../components/skills";
 
 const Index: React.FC = () => (
   <Layout>
-    <SEO />
     <Hero />
     <About>
       <Links />
@@ -25,3 +22,5 @@ const Index: React.FC = () => (
 );
 
 export default Index;
+
+export { Head } from "../components/head";
