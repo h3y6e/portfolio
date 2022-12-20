@@ -23,4 +23,4 @@ const Index: React.FC = () => (
 
 export default Index;
 
-export { Head } from "../components/seo";
+export { Head } from "../components/head";
