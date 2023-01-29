@@ -31,7 +31,7 @@
     "bulma": "^0.9.4",
     "bulma-timeline": "^3.0.5",
     "gatsby": "^5.4.2",
-    "gatsby-plugin-emotion": "^8.3.0",
+    "gatsby-plugin-emotion": "^8.5.0",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-manifest": "^5.4.0",
     "gatsby-plugin-offline": "^6.3.1",
