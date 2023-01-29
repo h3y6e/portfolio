@@ -1298,7 +1298,7 @@
     source-map "^0.5.7"
     stylis "4.1.3"
 
-"@emotion/babel-preset-css-prop@^11.2.0":
+"@emotion/babel-preset-css-prop@^11.10.0":
   version "11.10.0"
   resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-11.10.0.tgz#23922787561d8376782b0e9006323512fe797275"
   integrity sha512-oN2lCP0NJTEt80IIeFM1RbmapeEVNYzKXYk2pYirAuom9WvV9Oz/aJQN5Hn3RyBMPaY+Of1OZYpTVMle2jUm4g==
@@ -6217,13 +6217,13 @@ gatsby-parcel-config@1.4.0:
     "@parcel/transformer-js" "2.8.2"
     "@parcel/transformer-json" "2.8.2"
 
-gatsby-plugin-emotion@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-8.3.0.tgz#f41ad63a6c687877adaab7cbe97be58712032b15"
-  integrity sha512-2Ga5vwt7in3No+0MitU+l3481/yYkNgenWGU2n06PEszXMjXEdFU0xjMGchUGpYfNXL6vMVZH802y/4vjGUKTA==
+gatsby-plugin-emotion@^8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-8.5.0.tgz#0ce32bf071a6095c31529581dfafc48df8bc62ab"
+  integrity sha512-bu/IYE6xdXZSIONo22tXWMmIBAi1uG92kGtlSQOqcJX1h2qrJ6RMLGIorW9Bt8Ex0tzmKKrdUWDqnr8IgnycvA==
   dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@emotion/babel-preset-css-prop" "^11.2.0"
+    "@babel/runtime" "^7.20.7"
+    "@emotion/babel-preset-css-prop" "^11.10.0"
 
 gatsby-plugin-image@^3.3.2:
   version "3.3.2"
