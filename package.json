@@ -35,7 +35,7 @@
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-manifest": "^5.4.0",
     "gatsby-plugin-offline": "^6.3.1",
-    "gatsby-plugin-sass": "^6.3.1",
+    "gatsby-plugin-sass": "^6.5.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
