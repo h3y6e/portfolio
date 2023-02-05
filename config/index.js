@@ -8,6 +8,7 @@ module.exports = {
   siteLogo: `https://h3y6e.com/logos/logo.png`,
   siteDescription: `heyhoe's portfolio`,
   author: `heyhoe`,
+  username: `h3y6e`,
 
   userTwitter: `@h3y6e`,
   facebookAppId: `2343092932649003`,

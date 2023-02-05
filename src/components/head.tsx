@@ -10,8 +10,7 @@ interface TData {
       image: string;
       siteLanguage: string;
       ogLanguage: string;
-      twitter: string;
-      facebook: string;
+      username: string;
       fbAppId: string;
     };
   };
@@ -27,8 +26,7 @@ const query = graphql`
         image: logo
         siteLanguage
         ogLanguage
-        twitter
-        facebook
+        username
         fbAppId
       }
     }
@@ -44,8 +42,7 @@ const Head: React.FC = () => {
         description,
         image,
         ogLanguage,
-        twitter,
-        facebook,
+        username,
         fbAppId
       }
     }
@@ -67,11 +64,15 @@ const Head: React.FC = () => {
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={description} />
       {/* twitter */}
-      <meta name="twitter:site" content={twitter} />
+      <meta name="twitter:site" content={`@${username}`} />
       <meta name="twitter:card" content="summary" />
       {/* facebook */}
-      <meta property="og:site_name" content={facebook} />
+      <meta property="og:site_name" content={username} />
       <meta property="fb:app_id" content={fbAppId} />
+      {/* me */}
+      <link rel="me" href={`https://fedibird.com/@${username}`} />
+      <link rel="me" href={`https://twitter.com/${username}`} />
+      <link rel="me" href={`https://github.com/${username}`} />
     </>
   );
 };

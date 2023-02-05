@@ -11,8 +11,7 @@ module.exports = {
     siteLanguage: config.siteLanguage,
     ogLanguage: config.ogLanguage,
     author: config.author,
-    twitter: config.userTwitter,
-    facebook: config.ogSiteName,
+    username: config.username,
     fbAppId: config.facebookAppId
   },
   plugins: [
@@ -49,7 +48,7 @@ module.exports = {
         display: "standalone",
         icon: "static/logos/favicon.png",
         icon_options: {
-          purpose: `maskable`
+          purpose: "maskable"
         },
         start_url: config.startUrl,
         background_color: config.backgroundColor
