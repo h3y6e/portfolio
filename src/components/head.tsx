@@ -78,6 +78,8 @@ const Head: React.FC = () => {
         href={`https://webmention.io/${title}/webmention`}
       />
       <link rel="pingback" href={`https://webmention.io/${title}/xmlrpc`} />
+      {/* humans.txt */}
+      <link type="text/plain" rel="author" href={`${siteUrl}/humans.txt`} />
     </>
   );
 };
