@@ -70,9 +70,8 @@ const Head: React.FC = () => {
       <meta property="og:site_name" content={username} />
       <meta property="fb:app_id" content={fbAppId} />
       {/* me */}
-      <link rel="me" href={`https://fedibird.com/@${username}`} />
-      <link rel="me" href={`https://twitter.com/${username}`} />
-      <link rel="me" href={`https://github.com/${username}`} />
+      <link rel="me" href={`https://mastodon.social/@${username}`} />
+      <link rel="me" href={`https://misskey.io/@${username}`} />
       {/* webmention */}
       <link
         rel="webmention"
