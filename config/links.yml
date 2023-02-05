@@ -19,6 +19,13 @@
     - fab
     - twitter
 
+- title: Mastodon
+  link: https://fedibird.com/@h3y6e
+  color: "#6364ff"
+  icon:
+    - fab
+    - mastodon
+
 - title: GitHub
   link: https://github.com/h3y6e
   color: "#333"

@@ -7,11 +7,12 @@ import {
   faTwitter,
   faInstagram,
   faGithub,
-  faAmazon
+  faAmazon,
+  faMastodon
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPenNib } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faTwitter, faInstagram, faGithub, faAmazon);
+library.add(faTwitter, faInstagram, faGithub, faAmazon, faMastodon);
 library.add(faEnvelope, faPenNib);
 
 interface LinksData {
@@ -51,7 +52,7 @@ const Links: React.FC = () => {
           data-sal="slide-up"
           href={item.link}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="me noopener noreferrer"
           color={item.color}
           className="button has-text-white is-rounded"
         >
