@@ -63,7 +63,7 @@
     "puppeteer": "^19.4.1",
     "rimraf": "^3.0.2",
     "scroll-to-bottomjs": "^1.1.0",
-    "start-server-and-test": "^1.15.2"
+    "start-server-and-test": "^1.15.3"
   },
   "repository": {
     "type": "git",
