@@ -1,6 +1,7 @@
 - date: April 2016 - September 2020
   title: 京都大学
-  content: 工学部 電気電子工学科
+  content: |
+    工学部 電気電子工学科
   link: https://www.s-ee.t.kyoto-u.ac.jp/
   color: success
 
@@ -21,16 +22,17 @@
   color: info
 
 - date: March 2019 - December 2019
-  title: ソフトウェアエンジニア (アルバイト)
+  title: 株式会社 シー・オー・コンヴ (アルバイト)
   content: |
     Windows カーネルモードデバイスドライバ開発
     Windows GUIアプリケーション開発
-  link: "#experiences"
+  link: https://www.co-conv.jp/
   color: danger
 
 - date: April 2019 - September 2020
   title: Computer Vision Laboratory
-  content: 京都大学 工学部 電気電子工学科
+  content: |
+    京都大学 工学部 電気電子工学科
   link: https://vision.ist.i.kyoto-u.ac.jp
   color: success
 
@@ -45,15 +47,16 @@
 - date: December 2019 - December 2021
   title: Webエンジニア (契約社員)
   content: |
-    フロントエンドエンジニア
-    チームビルディング
+    Webフロントエンド開発
+    DevOps
     エンジニアリングマネジメント
   link: "#experiences"
   color: danger
 
-- date: January 2020 -
+- date: January 2020 - December 2022
   title: CAMPHOR- コアメンバー
-  content: 京都のIT系学生コミュニティCAMPHOR-の運営
+  content: |
+    京都のIT系学生コミュニティCAMPHOR-の運営
   link: https://camph.net/
   color: success
 
@@ -62,7 +65,7 @@
   content: |
     Webアプリ開発
     サービス開発
-  link: https://techlife.cookpad.com/entry/2020/09/16/100000
+  link: https://info.cookpad.com/
   color: danger
 
 - date: September 2020
@@ -70,10 +73,10 @@
   content: |
     チーム開発
     フルサイクルデベロッパー
-  link: https://voyagegroup.snar.jp/jobboard/detail.aspx?id=gOhDwyuFZ3o
+  link: https://voyagegroup.com/
   color: danger
 
-- date: October 2020 -
+- date: October 2020 - September 2022
   title: Interactive Media Design Laboratory
   content: |
     奈良先端科学技術大学院大学
@@ -85,8 +88,8 @@
   title: サイボウズ株式会社 (インターン)
   content: |
     生産性向上チーム
-    インフラエンジニア
-  link: https://cybozu.co.jp/company/job/recruitment/intern/2021/improvement.html
+    インフラ
+  link: https://cybozu.co.jp/
   color: danger
 
 - date: August 2021
@@ -94,27 +97,29 @@
   content: |
     システムプラットフォーム部
     SRE
-  link: https://hatenacorp.jp/recruit/intern/2021
+  link: https://hatenacorp.jp/
   color: danger
 
 - date: September 2021
   title: 株式会社ミクシィ (インターン)
   content: |
     ライブエクスペリエンス事業本部 システム部 Fansta開発G
-    フルスタックエンジニア
-  link: https://mixi-recruit.snar.jp/jobboard/detail.aspx?id=TI0x3tpVinb_rFs0VlRqzA
+    Webフロントエンド開発
+    バックエンド開発
+  link: https://www.mixi.co.jp
   color: danger
 
 - date: October 2021 - November 2021
   title: 株式会社ビズリーチ (インターン)
   content: |
     ビズリーチ事業部 プロダクト開発部 システム横断G
-    バックエンドエンジニア
+    バックエンド開発
   link: https://www.bizreach.co.jp
   color: danger
 
 - date: March 2022
   title: 株式会社ミクシィ (インターン)
-  content: ""
+  content: |
+    開発本部 CTO室
   link: https://www.mixi.co.jp
   color: danger
