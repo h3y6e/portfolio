@@ -2,25 +2,27 @@
   contents:
     - C
     - C#
-    - Swift
-    - Julia
-    - Python
-    - JavaScript
-    - TypeScript
-    - Rust
+    - Dart
     - Go
     - Java
+    - JavaScript
+    - Julia
     - Kotlin
     - LabVIEW
+    - Python
+    - Rust
+    - Swift
+    - TypeScript
     - Whitespace
+    - Zig
 
 - category: tools
   contents:
-    - GitHub
-    - Google Cloud
     - AWS
     - Docker
+    - GitHub
+    - Google Cloud
+    - HoloLens
+    - Keyboards
     - Terraform
     - Unity
-    - Hololens
-    - Keyboards
