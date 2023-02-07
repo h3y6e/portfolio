@@ -1,0 +1,23 @@
+{
+  "subject": "acct:h3y6e@fedibird.com",
+  "aliases": [
+    "https://fedibird.com/@h3y6e",
+    "https://fedibird.com/users/h3y6e"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://fedibird.com/@h3y6e"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://fedibird.com/users/h3y6e"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://fedibird.com/authorize_interaction?uri={uri}"
+    }
+  ]
+}
