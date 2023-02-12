@@ -1,7 +1,8 @@
 {
   "names": {
     "_": "f1479c160e576934586a7424195dc155a04448d3d71d4090adec95915dd1eba9",
-    "h3y6e": "f1479c160e576934586a7424195dc155a04448d3d71d4090adec95915dd1eba9"
+    "h3y6e": "f1479c160e576934586a7424195dc155a04448d3d71d4090adec95915dd1eba9",
+    "heyh0e": "be4977e502ee030151b7391caf0a0e44ef77649f89b25a537434eabf20d973bd"
   },
   "relays": {
     "f1479c160e576934586a7424195dc155a04448d3d71d4090adec95915dd1eba9": [
@@ -9,11 +10,15 @@
       "wss://nostr-dev.wellorder.net",
       "wss://nostr-relay.untethr.me",
       "wss://relay.damus.io",
+      "wss://relay.snort.social",
       "wss://nostr.zkid.social",
       "wss://relay.nostr.wirednet.jp",
       "wss://relay-jp.nostr.wirednet.jp",
       "wss://nostr.h3z.jp",
       "wss://nostr-relay.nokotaro.com",
+      "wss://nostr.h3y6e.com"
+    ],
+    "be4977e502ee030151b7391caf0a0e44ef77649f89b25a537434eabf20d973bd": [
       "wss://nostr.h3y6e.com"
     ]
   }
