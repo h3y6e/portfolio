@@ -6,12 +6,8 @@
   },
   "relays": {
     "f1479c160e576934586a7424195dc155a04448d3d71d4090adec95915dd1eba9": [
-      "wss://nostr-pub.wellorder.net",
-      "wss://nostr-dev.wellorder.net",
-      "wss://nostr-relay.untethr.me",
-      "wss://relay.damus.io",
-      "wss://relay.snort.social",
-      "wss://nostr.zkid.social",
+      "wss://nostr.wine",
+      "wss://filter.nostr.wine/npub179rec9sw2a5ngkr2wsjpjhwp2ksygjxn6uw5py9daj2ezhw3aw5swv3s6q?broadcast=true",
       "wss://relay.nostr.wirednet.jp",
       "wss://relay-jp.nostr.wirednet.jp",
       "wss://nostr.h3z.jp",
