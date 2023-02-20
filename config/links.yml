@@ -39,10 +39,9 @@
   icon:
     - fas
     - pen-nib
-
-- title: Wishlist
-  link: https://wishlist.h3y6e.com
-  color: "#ff9900"
-  icon:
-    - fab
-    - amazon
+# - title: Wishlist
+#   link: https://wishlist.h3y6e.com
+#   color: "#ff9900"
+#   icon:
+#     - fab
+#     - amazon
