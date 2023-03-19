@@ -37,7 +37,7 @@
     "gatsby-plugin-offline": "^6.3.1",
     "gatsby-plugin-sass": "^6.5.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
-    "gatsby-plugin-sharp": "^5.6.0",
+    "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-typescript": "^5.7.0",
     "gatsby-source-filesystem": "^5.6.0",
