@@ -72,6 +72,7 @@ const Head: React.FC = () => {
       {/* me */}
       <link rel="me" href={`https://mastodon.social/@${username}`} />
       <link rel="me" href={`https://misskey.io/@${username}`} />
+      <link rel="me" href={`https://fedibird.com/@${username}`} />
       {/* webmention */}
       <link
         rel="webmention"
