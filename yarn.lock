@@ -1479,10 +1479,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.36.0.tgz#9837f768c03a1e4a30bd304a64fb8844f0e72efe"
   integrity sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==
 
-"@fontsource/fira-code@^4.5.12":
-  version "4.5.12"
-  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.12.tgz#110922227c6a9fe53f4dc262788f773663d8683d"
-  integrity sha512-dAVGsgiVR6jslpuXosHH4/Jf8bsAIKL1RWqjVq4WpmxL7CFHfg9hT5bAv/Y3xsEj8kDTibEgpuC3eMfr9kb02g==
+"@fontsource/fira-code@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.13.tgz#7ddd62472f7e6002acf9371815090eecf5d28f8c"
+  integrity sha512-T1IG6/2AXSwEKwlrEm3kyIL3RQTMblPyj68HgnBGl0IBGFxgS5LZ7StRdDo/QimJ4Tz6FQGHuy1Y/ShNxaUefA==
 
 "@fontsource/montserrat@^4.5.14":
   version "4.5.14"
