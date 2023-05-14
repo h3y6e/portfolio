@@ -6218,7 +6218,7 @@ gatsby-cli@^5.9.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.3.1, gatsby-core-utils@^4.6.0, gatsby-core-utils@^4.7.0, gatsby-core-utils@^4.8.0, gatsby-core-utils@^4.9.0:
+gatsby-core-utils@^4.3.1, gatsby-core-utils@^4.6.0, gatsby-core-utils@^4.8.0, gatsby-core-utils@^4.9.0:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.9.0.tgz#1134d9a119f49b90d3b5107210dfdd17a4231463"
   integrity sha512-diCAmlr42YQpSKapD374JVF+ojDXTHxnrNoS907jNGgT4J35t2az9GsEQFgrEou3Td5TLuUl/8yJM2Hpwn4gyg==
@@ -6322,14 +6322,14 @@ gatsby-plugin-image@^3.8.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.8.1"
 
-gatsby-plugin-manifest@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.7.0.tgz#254580801c8ad9081abed0a99115ed5fb931be62"
-  integrity sha512-UiMKCqIOLUFvjJsny0wOMCQWs/Wx0BXmBTQ7Ck1HJsgvq4N3yKTlwAlgu1+eV/ExcpESKc6bncKZFUibwnE/QA==
+gatsby-plugin-manifest@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-5.9.0.tgz#0d181c86e840400f93b263d2dcbbf486f6d5388c"
+  integrity sha512-6BrS5WprI+MJM4JsoJ30Z5cuKzICFlohpXiUMO2Xc+p2bzl+hgeIb06nm4lP52gNAPOVyLQDZDqB0PKRNYVe/w==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    gatsby-core-utils "^4.7.0"
-    gatsby-plugin-utils "^4.7.0"
+    gatsby-core-utils "^4.9.0"
+    gatsby-plugin-utils "^4.9.0"
     semver "^7.3.8"
     sharp "^0.31.3"
 
@@ -6419,7 +6419,7 @@ gatsby-plugin-typescript@^5.9.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.9.0"
 
-gatsby-plugin-utils@^4.7.0, gatsby-plugin-utils@^4.8.0, gatsby-plugin-utils@^4.9.0:
+gatsby-plugin-utils@^4.8.0, gatsby-plugin-utils@^4.9.0:
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.9.0.tgz#d0b7c72964ef6c4dee7d81f4e6217e5e677c7352"
   integrity sha512-JGd6FNjoj2ceb4eCw7xzIELlPwSBxGGkJpy+iQTnLT32aPT0vidjGmiytXpNDvktLrxpmuTDPVfMJTjopu+y2A==
