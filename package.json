@@ -21,7 +21,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.11.0",
     "@fontsource/fira-code": "^4.5.13",
-    "@fontsource/montserrat": "^4.5.14",
+    "@fontsource/montserrat": "^5.0.3",
     "@fontsource/noto-sans-jp": "^4.5.12",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
