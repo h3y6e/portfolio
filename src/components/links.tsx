@@ -8,17 +8,17 @@ import {
   faInstagram,
   faGithub,
   faAmazon,
-  faMastodon
+  faMastodon,
+  faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faPenNib,
-  faX,
   faCircleNodes
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faTwitter, faInstagram, faGithub, faAmazon, faMastodon);
-library.add(faEnvelope, faPenNib, faX, faCircleNodes);
+library.add(faEnvelope, faPenNib, faXTwitter, faCircleNodes);
 
 interface LinksData {
   links: {

@@ -16,8 +16,8 @@
   link: https://x.com/h3y6e
   color: "#1da1f2"
   icon:
-    - fas
-    - x
+    - fab
+    - x-twitter
 
 - title: ActivityPub
   link: https://social.camph.net/@h3y6e
