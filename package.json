@@ -33,7 +33,7 @@
     "gatsby": "^5.10.0",
     "gatsby-plugin-emotion": "^8.9.0",
     "gatsby-plugin-image": "^3.11.0",
-    "gatsby-plugin-manifest": "^5.9.0",
+    "gatsby-plugin-manifest": "^5.11.0",
     "gatsby-plugin-offline": "^6.11.0",
     "gatsby-plugin-sass": "^6.10.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
