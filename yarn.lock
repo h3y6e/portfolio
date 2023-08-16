@@ -1499,10 +1499,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.3.tgz#0b63e051568f61daa8cef5f20bded4df8eda70f4"
   integrity sha512-HxbmY6UeFmwwaqLg3vdkre2U0YgACood2cllKC2ohJdwP9YAieJltodOAcgY0lwvpTAeadW8FlvKFWQIPcS4cg==
 
-"@fontsource/noto-sans-jp@^5.0.5":
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-jp/-/noto-sans-jp-5.0.5.tgz#2703e9df783d53d2c1ec0450f0814ca51d239227"
-  integrity sha512-ixFlbHEtu2pqGkGv+H8qxWvP7VEiavp72OslASRq+sbCPxgFvAYuMpetQkavrr3qVZQciROdb/Hpor/tQ5c1PQ==
+"@fontsource/noto-sans-jp@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-sans-jp/-/noto-sans-jp-5.0.7.tgz#500a0ed243adaf60a9947975daddc6a136281eca"
+  integrity sha512-8zep+eivzD79wS9y54Gf+vsO9joDOxJd/JbA4fdVoeUggN/RGrZghqSw1TeslVtpVxVe8bK+NOyDdpOGbJnbxg==
 
 "@fortawesome/fontawesome-common-types@6.4.2":
   version "6.4.2"
