@@ -1561,10 +1561,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/fira-code/-/fira-code-4.5.13.tgz#7ddd62472f7e6002acf9371815090eecf5d28f8c"
   integrity sha512-T1IG6/2AXSwEKwlrEm3kyIL3RQTMblPyj68HgnBGl0IBGFxgS5LZ7StRdDo/QimJ4Tz6FQGHuy1Y/ShNxaUefA==
 
-"@fontsource/montserrat@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.0.3.tgz#0b63e051568f61daa8cef5f20bded4df8eda70f4"
-  integrity sha512-HxbmY6UeFmwwaqLg3vdkre2U0YgACood2cllKC2ohJdwP9YAieJltodOAcgY0lwvpTAeadW8FlvKFWQIPcS4cg==
+"@fontsource/montserrat@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/montserrat/-/montserrat-5.1.0.tgz#3a73a60be1ecd247ff879287f63acda43962cece"
+  integrity sha512-HB4+rWP9Y8g6T9RGRVJk2SvAJtx2eBAXuivvPOqQdD806/9WESUfucfH9LqFj3bGgdhNCfh0Rv0NGuwEmBLRiw==
 
 "@fontsource/noto-sans-jp@^5.0.11":
   version "5.0.11"
@@ -12694,7 +12694,7 @@ ws@8.13.0:
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.13.0.tgz#9a9fb92f93cf41512a0735c8f4dd09b8a1211cd0"
   integrity sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA==
 
-ws@8.17.1:
+ws@8.17.1, ws@^8.0.0:
   version "8.17.1"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.17.1.tgz#9293da530bb548febc95371d90f9c878727d919b"
   integrity sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==
@@ -12703,11 +12703,6 @@ ws@^7.0.0:
   version "7.5.10"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.10.tgz#58b5c20dc281633f6c19113f39b349bd8bd558d9"
   integrity sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==
-
-ws@^8.0.0:
-  version "8.17.1"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-8.17.1.tgz#9293da530bb548febc95371d90f9c878727d919b"
-  integrity sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==
 
 ws@~8.11.0:
   version "8.11.0"
