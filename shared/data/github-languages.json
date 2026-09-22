@@ -1,0 +1,42 @@
+[
+  {
+    "name": "TypeScript",
+    "bytes": 33289328,
+    "percent": 38.1
+  },
+  {
+    "name": "Go",
+    "bytes": 17865129,
+    "percent": 20.4
+  },
+  {
+    "name": "Dart",
+    "bytes": 15966829,
+    "percent": 18.3
+  },
+  {
+    "name": "JavaScript",
+    "bytes": 5617308,
+    "percent": 6.4
+  },
+  {
+    "name": "Python",
+    "bytes": 3709657,
+    "percent": 4.2
+  },
+  {
+    "name": "C#",
+    "bytes": 2703144,
+    "percent": 3.1
+  },
+  {
+    "name": "HCL",
+    "bytes": 2701578,
+    "percent": 3.1
+  },
+  {
+    "name": "HTML",
+    "bytes": 1225165,
+    "percent": 1.4
+  }
+]

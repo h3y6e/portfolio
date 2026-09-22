@@ -1,5 +1,0 @@
-{
-  "prettier.configPath": ".prettierrc.yml",
-  "prettier.ignorePath": ".gitignore",
-  "editor.formatOnSave": true
-}

@@ -1,0 +1,10 @@
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+# vue-tsc needs classic lib/tsc; official TS7 has none — bridge (tsgo 7). https://github.com/vuejs/language-tools/issues/6167
+catalog:
+  typescript: npm:typescript-native-bridge@6.0.3-bridge.17.tsgo.7.0.2
+
+overrides:
+  typescript: 'catalog:'

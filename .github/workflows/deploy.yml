@@ -1,36 +1,40 @@
-name: Build and Deploy
+name: Deploy
+
 on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
-permissions: write-all
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
+      - run: aube install
+      - run: node scripts/fetch-blog-posts.ts
+        continue-on-error: true
+      - run: aubr generate
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          path: .output/public
 
-      - name: Install dependencies
-        run: yarn install --pure-lockfile
-
-      - name: Build
-        run: yarn build
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.6.3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

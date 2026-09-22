@@ -1,0 +1,6 @@
+[env]
+_.path = [ "{{config_root}}/node_modules/.bin" ]
+
+[tools]
+aube = "2.2.17"
+node = "26.9.0"
