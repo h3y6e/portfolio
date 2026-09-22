@@ -1,0 +1,563 @@
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --duration-press: 160ms;
+  --duration-ui: 180ms;
+  --duration-view: 220ms;
+
+  --color-bg: #121212;
+  --color-fg: #d3d5d5;
+  --color-primary: #a5ebec;
+  --color-primary-deep: #2aa298;
+  --color-selection: color-mix(in oklab, var(--color-primary) 40%, transparent);
+  --scroll-pad-top: 2.75rem;
+}
+
+html {
+  color-scheme: dark;
+  accent-color: var(--color-primary);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.7;
+  hanging-punctuation: allow-end;
+  text-spacing-trim: trim-start;
+  scroll-padding-top: var(--scroll-pad-top);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html[data-smooth-scroll] {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-icon,
+  .btn-text {
+    transition: none;
+  }
+
+  .btn-icon:active,
+  .btn-text:active {
+    transform: none;
+  }
+}
+
+html.light {
+  color-scheme: light;
+  --color-bg: #fbfbfb;
+  --color-fg: #403f53;
+  accent-color: var(--color-primary-deep);
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+html.light a:hover {
+  color: var(--color-primary-deep);
+}
+
+.site-link {
+  color: inherit;
+  transition: color var(--duration-press) ease;
+}
+
+.site-link-icon {
+  opacity: 0.72;
+  transition:
+    opacity var(--duration-press) ease,
+    color var(--duration-press) ease;
+}
+
+a.site-link:hover,
+a.site-link:focus-visible {
+  color: var(--link-brand-dark);
+}
+
+html.light a.site-link:hover,
+html.light a.site-link:focus-visible {
+  color: var(--link-brand);
+}
+
+.site-link:hover .site-link-icon,
+.site-link:focus-visible .site-link-icon {
+  opacity: 1;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  font-weight: 500;
+}
+
+::selection {
+  background: var(--color-selection);
+}
+
+@property --rail-weight {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.reader-rail-label {
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(0.35rem);
+  color: var(--color-fg);
+  pointer-events: none;
+}
+
+.reader-rail-line {
+  display: block;
+  width: 0.7rem;
+  height: 1.5px;
+  border-radius: 1px;
+  background: color-mix(in oklab, var(--color-primary) calc(var(--rail-weight, 0) * 100%), var(--color-fg));
+  opacity: calc(0.28 + 0.72 * var(--rail-weight, 0));
+  transform: scaleX(calc(1 + 0.55 * var(--rail-weight, 0)));
+  transform-origin: right center;
+}
+
+html.light .reader-rail-line {
+  background: color-mix(in oklab, var(--color-primary-deep) calc(var(--rail-weight, 0) * 100%), var(--color-fg));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .reader-rail-link:hover .reader-rail-label,
+  .reader-rail-link:focus-visible .reader-rail-label {
+    opacity: 0.9;
+    transform: none;
+  }
+
+  .reader-rail-link:hover .reader-rail-line,
+  .reader-rail-link:focus-visible .reader-rail-line {
+    opacity: max(0.85, calc(0.28 + 0.72 * var(--rail-weight, 0)));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reader-rail-label {
+    transition:
+      opacity var(--duration-ui) var(--ease-out),
+      transform var(--duration-ui) var(--ease-out);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reader-rail-label {
+    transform: none;
+  }
+}
+
+.notes-rail-wrap {
+  --notes-shell: 45rem;
+  --notes-gutter: 1.5rem;
+  --notes-ctrl-inset: 0.85rem;
+  position: relative;
+}
+
+.notes-rail {
+  display: flex;
+  gap: 1.75rem;
+  width: 100%;
+  padding-block: 0.15rem 0.35rem;
+  padding-inline-start: max(var(--notes-gutter), calc((100% - var(--notes-shell)) / 2 + var(--notes-gutter)));
+  padding-inline-end: var(--notes-gutter);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.notes-rail--fade-start {
+  mask-image: linear-gradient(to right, transparent, #000 3.25rem, #000 100%);
+}
+
+.notes-rail--fade-end {
+  mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 3.25rem), transparent);
+}
+
+.notes-rail--fade-start.notes-rail--fade-end {
+  mask-image: linear-gradient(to right, transparent, #000 3.25rem, #000 calc(100% - 3.25rem), transparent);
+}
+
+.notes-rail-btn {
+  --notes-btn-shift: 0px;
+  --notes-btn-scale: 1;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 9999px;
+  background: color-mix(in oklab, var(--color-bg) 72%, transparent);
+  color: inherit;
+  opacity: 0.62;
+  cursor: pointer;
+  transform: translateY(-50%) translateX(var(--notes-btn-shift)) scale(var(--notes-btn-scale));
+  transition:
+    opacity var(--duration-ui) var(--ease-out),
+    color var(--duration-ui) var(--ease-out),
+    background-color var(--duration-ui) var(--ease-out),
+    transform var(--duration-press) var(--ease-out);
+}
+
+.notes-rail-btn--prev {
+  left: var(--notes-ctrl-inset);
+}
+
+.notes-rail-btn--next {
+  right: var(--notes-ctrl-inset);
+}
+
+.notes-rail-btn:hover:not(:disabled),
+.notes-rail-btn:focus-visible:not(:disabled) {
+  opacity: 1;
+  color: var(--color-primary);
+  background: color-mix(in oklab, var(--color-bg) 90%, transparent);
+}
+
+html.light .notes-rail-btn:hover:not(:disabled),
+html.light .notes-rail-btn:focus-visible:not(:disabled) {
+  color: var(--color-primary-deep);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .notes-rail-btn--prev:hover:not(:disabled),
+  .notes-rail-btn--prev:focus-visible:not(:disabled) {
+    --notes-btn-shift: -0.2rem;
+  }
+
+  .notes-rail-btn--next:hover:not(:disabled),
+  .notes-rail-btn--next:focus-visible:not(:disabled) {
+    --notes-btn-shift: 0.2rem;
+  }
+}
+
+.notes-rail-btn:active:not(:disabled) {
+  --notes-btn-scale: 0.97;
+}
+
+.notes-rail-btn:focus-visible {
+  outline: 1px solid color-mix(in oklab, currentColor 45%, transparent);
+  outline-offset: 2px;
+}
+
+.notes-rail-btn:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notes-rail-btn {
+    transition:
+      opacity var(--duration-ui) ease,
+      color var(--duration-ui) ease,
+      background-color var(--duration-ui) ease;
+  }
+
+  .notes-rail-btn--prev:hover:not(:disabled),
+  .notes-rail-btn--prev:focus-visible:not(:disabled),
+  .notes-rail-btn--next:hover:not(:disabled),
+  .notes-rail-btn--next:focus-visible:not(:disabled),
+  .notes-rail-btn:active:not(:disabled) {
+    --notes-btn-shift: 0px;
+    --notes-btn-scale: 1;
+  }
+}
+
+.notes-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.notes-year {
+  flex: 0 0 17rem;
+  max-height: min(28rem, 55vh);
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-align: start;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.notes-year::-webkit-scrollbar {
+  display: none;
+}
+
+.notes-year-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  opacity: 0.4;
+  background: linear-gradient(to bottom, var(--notes-year-bg, var(--color-bg)) 65%, transparent);
+}
+
+html.light .notes-year-heading {
+  --notes-year-bg: var(--color-bg);
+  opacity: 0.45;
+}
+
+.timeline {
+  --timeline-dot: 6px;
+  --timeline-line: 1px;
+  --timeline-axis: 1rem;
+  --timeline-gap: 0.85rem;
+  --timeline-date: 0px;
+  --timeline-gap-before-axis: 0px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: calc(0.28rem + var(--timeline-dot) / 2);
+  bottom: calc(0.28rem + var(--timeline-dot) / 2);
+  left: calc(
+    var(--timeline-date) + var(--timeline-gap-before-axis) + (var(--timeline-axis) - var(--timeline-line)) / 2
+  );
+  width: var(--timeline-line);
+  background: color-mix(in oklab, currentColor 22%, transparent);
+  pointer-events: none;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: var(--timeline-axis) 1fr;
+  grid-template-rows: auto auto;
+  column-gap: var(--timeline-gap);
+  row-gap: 0.2rem;
+  padding-bottom: 1.35rem;
+  transition: opacity var(--duration-ui) var(--ease-out);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item--dim {
+  opacity: 0.38;
+}
+
+.timeline-date {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.timeline-date-split {
+  display: none;
+}
+
+.timeline-axis {
+  grid-column: 1;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: var(--timeline-axis);
+}
+
+.timeline-dot {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  box-sizing: border-box;
+  width: var(--timeline-dot);
+  height: var(--timeline-dot);
+  margin-top: 0.28rem;
+  border-radius: 9999px;
+  background: color-mix(in oklab, currentColor 55%, transparent);
+  box-shadow: 0 0 0 3px var(--color-bg);
+  transition:
+    background-color var(--duration-ui) var(--ease-out),
+    transform var(--duration-ui) var(--ease-out);
+}
+
+.timeline-item--ongoing .timeline-dot {
+  background: var(--color-bg);
+  box-shadow:
+    0 0 0 3px var(--color-bg),
+    inset 0 0 0 1.5px var(--color-primary);
+}
+
+html.light .timeline-item--ongoing .timeline-dot {
+  box-shadow:
+    0 0 0 3px var(--color-bg),
+    inset 0 0 0 1.5px var(--color-primary-deep);
+}
+
+.timeline-item--active .timeline-dot {
+  background: var(--color-primary);
+  transform: scale(1.15);
+}
+
+html.light .timeline-item--active .timeline-dot {
+  background: var(--color-primary-deep);
+}
+
+.timeline-body {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+}
+
+.timeline-item .timeline-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0 !important;
+  transition:
+    max-height var(--duration-view) var(--ease-out),
+    opacity var(--duration-ui) var(--ease-out);
+}
+
+.timeline-item--active .timeline-content,
+.timeline-item:focus-within .timeline-content {
+  max-height: 8rem;
+  opacity: 1;
+  margin-top: 0.35rem !important;
+}
+
+@media (min-width: 640px) {
+  .timeline {
+    --timeline-date: 11rem;
+    --timeline-gap: 0.9rem;
+    --timeline-gap-before-axis: 0.9rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: var(--timeline-date) var(--timeline-axis) 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+    padding-bottom: 1.5rem;
+  }
+
+  .timeline-date {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.1rem;
+    padding-top: 0.15rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .timeline-date-split + .timeline-date-full {
+    display: none;
+  }
+
+  .timeline-date-split {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.1rem;
+  }
+
+  .timeline-date-start,
+  .timeline-date-end {
+    display: block;
+  }
+
+  .timeline-axis {
+    grid-column: 2;
+    grid-row: 1 / -1;
+  }
+
+  .timeline-body {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item,
+  .timeline-dot {
+    transition:
+      opacity var(--duration-ui) ease,
+      background-color var(--duration-ui) ease;
+  }
+
+  .timeline-item .timeline-content {
+    transition: none;
+  }
+
+  .timeline-item--active .timeline-dot {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: var(--duration-view);
+    animation-timing-function: var(--ease-out);
+  }
+
+  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+    .reveal {
+      animation: reveal-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 32%;
+    }
+
+    .timeline-item.reveal {
+      animation-name: reveal-slide;
+    }
+
+    @keyframes reveal-slide {
+      from {
+        transform: translateY(0.5rem);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes reveal-up {
+      from {
+        opacity: 0;
+        transform: translateY(0.5rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}

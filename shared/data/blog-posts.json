@@ -1,0 +1,545 @@
+[
+  {
+    "slug": "jev-in-dark-factory",
+    "title": "JevをDark Factoryに組み込む",
+    "date": "2026-09-18",
+    "type": "Report",
+    "tags": [
+      "jev",
+      "flue"
+    ],
+    "description": "if文では書けないがLLMに任せるには重い判定をTypeSafe AIのJevに答えさせた。Flueで組んだDark Factoryのトリアージ・出力検証・リスク分類で検証。危険側の誤りは一件も出なかったが、合否を一発で答えさせると精度が伸びず、狭い質問に分解して答えを組み合わせる必要があった",
+    "url": "https://blog.h3y6e.com/posts/2026/09/18/jev-in-dark-factory/"
+  },
+  {
+    "slug": "building-wiki-skill",
+    "title": "LLM Wikiを日々の開発に組み込む",
+    "date": "2026-09-17",
+    "type": "Report",
+    "tags": [
+      "wiki",
+      "okf",
+      "agentskills"
+    ],
+    "description": "一次情報からエージェントがwikiを編纂して維持するための運用ルールを、building-wikiというAgent Skillにまとめた",
+    "url": "https://blog.h3y6e.com/posts/2026/09/17/building-wiki-skill/"
+  },
+  {
+    "slug": "gh-aw-project-triage",
+    "title": "gh-awでProjectの手入れをGitHub Actionsに乗せる",
+    "date": "2026-04-27",
+    "type": "Report",
+    "tags": [
+      "copilot",
+      "gha"
+    ],
+    "description": "MarkdownワークフローでProjectの空欄を安全に埋める",
+    "url": "https://blog.h3y6e.com/posts/2026/04/27/gh-aw-project-triage/"
+  },
+  {
+    "slug": "gh-aw-issue-driven-agentic-workflow",
+    "title": "issueを出したら実装される世界をgh-awで見た",
+    "date": "2026-04-24",
+    "type": "Report",
+    "tags": [
+      "copilot",
+      "gha"
+    ],
+    "description": "GitHub WorkflowsでAI Agentの出入り口を設計する方法",
+    "url": "https://blog.h3y6e.com/posts/2026/04/24/gh-aw-issue-driven-agentic-workflow/"
+  },
+  {
+    "slug": "calver-with-tagpr",
+    "title": "バージョニングで悩みたくないならCalVer",
+    "date": "2026-03-25",
+    "type": "Essay",
+    "tags": [
+      "versioning",
+      "gha"
+    ],
+    "description": "SemVerの意味付けがしにくく定期的にリリースするプロダクトのバージョニングにはCalVerを採用しよう",
+    "url": "https://blog.h3y6e.com/posts/2026/03/25/calver-with-tagpr/"
+  },
+  {
+    "slug": "meta-repo-for-non-coders",
+    "title": "普段コードを書かない人が働きやすいようにメタリポジトリを整える",
+    "date": "2026-03-25",
+    "type": "Report",
+    "tags": [
+      "codex",
+      "agentskills",
+      "git"
+    ],
+    "description": "普段コードを書かない人がCodex Appから仕様書作成や横断調査を進めやすくするために、メタリポジトリとskillsを整えている。submoduleで集約しているが難しさも残る",
+    "url": "https://blog.h3y6e.com/posts/2026/03/25/meta-repo-for-non-coders/"
+  },
+  {
+    "slug": "claude-review-agent-skills",
+    "title": "ClaudeによるコードレビューをAgent Skillsで育てる",
+    "date": "2026-03-24",
+    "type": "Report",
+    "tags": [
+      "claude",
+      "review",
+      "agentskills"
+    ],
+    "description": "Claudeレビューの自己改善ループをAgent Skills中心に再設計し、自動レビューと対話モードで同じ知識を共有するようにした",
+    "url": "https://blog.h3y6e.com/posts/2026/03/24/claude-review-agent-skills/"
+  },
+  {
+    "slug": "samsung-shutter-sound",
+    "title": "Samsung Galaxyのカメラシャッター音を消す",
+    "date": "2025-12-13",
+    "type": "Guide",
+    "tags": [
+      "android"
+    ],
+    "description": "adb shell settings put system csc_pref_camera_forced_shuttersound_key 0",
+    "url": "https://blog.h3y6e.com/posts/2025/12/13/samsung-shutter-sound/"
+  },
+  {
+    "slug": "claude-review-feedback-tuning",
+    "title": "Claudeによるコードレビューをフィードバックで自己改善する仕組み",
+    "date": "2025-08-01",
+    "type": "Report",
+    "tags": [
+      "claude",
+      "review",
+      "gha"
+    ],
+    "description": "Claudeによるコードレビューに対する開発者のフィードバックを収集・分析し、レビュー品質を自動的に改善するワークフローを実装した",
+    "url": "https://blog.h3y6e.com/posts/2025/08/01/claude-review-feedback-tuning/"
+  },
+  {
+    "slug": "spherical-ui",
+    "title": "球化するUI",
+    "date": "2025-07-03",
+    "type": "Essay",
+    "tags": [
+      "ui"
+    ],
+    "description": "UIはあらゆる入力を受け止める球となり、ユーザーを取り巻く球状の空間へと拡張していく",
+    "url": "https://blog.h3y6e.com/posts/2025/07/03/spherical-ui/"
+  },
+  {
+    "slug": "claude-code-action-pr-review",
+    "title": "Claude Code ActionでPRレビューを自動化",
+    "date": "2025-07-02",
+    "type": "Report",
+    "tags": [
+      "claude",
+      "review",
+      "gha"
+    ],
+    "description": "Claude Code ActionとAWS Bedrockを使って、GitHub ActionsでPRの自動レビューシステムを構築した",
+    "url": "https://blog.h3y6e.com/posts/2025/07/02/claude-code-action-pr-review/"
+  },
+  {
+    "slug": "raycast-plamo-translate",
+    "title": "RaycastでPLaMo翻訳を使う",
+    "date": "2025-06-21",
+    "type": "Guide",
+    "tags": [
+      "raycast"
+    ],
+    "description": "Script Command機能を使ってPLaMo翻訳CLIをRaycastから呼び出せるようにした",
+    "url": "https://blog.h3y6e.com/posts/2025/06/21/raycast-plamo-translate/"
+  },
+  {
+    "slug": "aws-credentials-1password",
+    "title": "1PasswordでAWSクレデンシャルを扱うならop pluginより素のopコマンド",
+    "date": "2025-05-30",
+    "type": "Guide",
+    "tags": [
+      "aws",
+      "1password"
+    ],
+    "description": "1Passwordでcredential_processを使う際は、op pluginを経由せず素のopコマンドを使う方が柔軟で便利",
+    "url": "https://blog.h3y6e.com/posts/2025/05/30/aws-credentials-1password/"
+  },
+  {
+    "slug": "black-friday-services-2024",
+    "title": "ブラックフライデーで買ったサービス",
+    "date": "2024-11-29",
+    "type": "Essay",
+    "tags": [
+      "shopping"
+    ],
+    "description": "2024年のブラックフライデーで購入したサービスと、購入を見送ったサービスについて",
+    "url": "https://blog.h3y6e.com/posts/2024/11/29/black-friday-services-2024/"
+  },
+  {
+    "slug": "prusaslicer-speed-optimization",
+    "title": "PrusaSlicerで印刷速度を爆速に",
+    "date": "2023-10-14",
+    "type": "Guide",
+    "tags": [
+      "3dprinting"
+    ],
+    "description": "PrusaSlicerでgcode生成してから印刷してみたらめちゃくちゃ速くなった話",
+    "url": "https://blog.h3y6e.com/posts/2023/10/14/prusaslicer-speed-optimization/"
+  },
+  {
+    "slug": "karabiner-fn-key-customization",
+    "title": "Karabinerでfnキーに3つの機能を持たせた",
+    "date": "2023-04-30",
+    "type": "Guide",
+    "tags": [
+      "macos",
+      "karabiner"
+    ],
+    "description": "fnキーを単体押し・組み合わせ・長押しで異なる動作をさせる設定を作った",
+    "url": "https://blog.h3y6e.com/posts/2023/04/30/karabiner-fn-key-customization/"
+  },
+  {
+    "slug": "comment-on-nostr",
+    "title": "Nostrを用いてblogとmicrobloggingの中間的存在が作れるのでは無いか、という思考と実験",
+    "date": "2023-02-08",
+    "type": "Essay",
+    "tags": [
+      "nostr",
+      "blog"
+    ],
+    "description": "Comment on Nostrをこのブログに試験的に導入してみる。",
+    "url": "https://blog.h3y6e.com/posts/2023/02/08/comment-on-nostr/"
+  },
+  {
+    "slug": "podcasts2022",
+    "title": "2022年に聴いていたPodcast",
+    "date": "2022-12-31",
+    "type": "Essay",
+    "tags": [
+      "podcast"
+    ],
+    "description": "今年聴いたPodcastで勧めたいやつを雑に紹介する。",
+    "url": "https://blog.h3y6e.com/posts/2022/12/31/podcasts2022/"
+  },
+  {
+    "slug": "getting-started-with-podcasting",
+    "title": "Podcastことはじめ",
+    "date": "2022-12-09",
+    "type": "Guide",
+    "tags": [
+      "camphor",
+      "adventcalendar",
+      "podcast"
+    ],
+    "description": "CAMPHOR-でPodcastを始めたので収録から配信までの知見を書く。",
+    "url": "https://blog.h3y6e.com/posts/2022/12/09/getting-started-with-podcasting/"
+  },
+  {
+    "slug": "macos-setup",
+    "title": "macOSで初期状態からのセットアップ",
+    "date": "2022-12-05",
+    "type": "Guide",
+    "tags": [
+      "macos"
+    ],
+    "description": "新しいMacを買ったときとか、macOSをファクトリーリセットしたい衝動に駆られたときに。",
+    "url": "https://blog.h3y6e.com/posts/2022/12/05/macos-setup/"
+  },
+  {
+    "slug": "rustykeys-buildlog",
+    "title": "RustyKeys ビルドログ",
+    "date": "2022-05-02",
+    "type": "Build",
+    "tags": [
+      "keyboard"
+    ],
+    "description": "RustyKeysのビルドログです。",
+    "url": "https://blog.h3y6e.com/posts/2022/05/02/rustykeys-buildlog/"
+  },
+  {
+    "slug": "navpad-10-buildlog",
+    "title": "Navpad 1.0 ビルドログ",
+    "date": "2022-03-15",
+    "type": "Build",
+    "tags": [
+      "keyboard",
+      "yushakobo"
+    ],
+    "description": "遊舎工房様より提供していただいたNavpad 1.0のビルドログです。",
+    "url": "https://blog.h3y6e.com/posts/2022/03/15/navpad-10-buildlog/"
+  },
+  {
+    "slug": "podcasts2021",
+    "title": "2021年に聴いていたPodcast",
+    "date": "2021-12-31",
+    "type": "Essay",
+    "tags": [
+      "podcast"
+    ],
+    "description": "今年聴いたPodcastで勧めたいやつを雑に紹介する。",
+    "url": "https://blog.h3y6e.com/posts/2021/12/31/podcasts2021/"
+  },
+  {
+    "slug": "auto-hatching-in-pokemon-bdsp",
+    "title": "【ポケモンBDSP】自動孵化装置を作って高個体値色違いイーブイを手に入れる(夢を見た)",
+    "date": "2021-12-01",
+    "type": "Build",
+    "tags": [
+      "camphor",
+      "adventcalendar",
+      "automation"
+    ],
+    "description": "Pro Micro(Arduino Leonardo互換機)でポケモンBDSP版自動孵化装置を作成する。",
+    "url": "https://blog.h3y6e.com/posts/2021/12/01/auto-hatching-in-pokemon-bdsp/"
+  },
+  {
+    "slug": "stuff2020",
+    "title": "買って（良|悪）かったもの2020",
+    "date": "2020-12-31",
+    "type": "Essay",
+    "tags": [
+      "shopping"
+    ],
+    "description": "2020年に買ったものを紹介する。",
+    "url": "https://blog.h3y6e.com/posts/2020/12/31/stuff2020/"
+  },
+  {
+    "slug": "podcasts",
+    "title": "ITエンジニア志望の学生が聴くべきPodcast",
+    "date": "2020-12-20",
+    "type": "Essay",
+    "tags": [
+      "camphor",
+      "adventcalendar",
+      "podcast"
+    ],
+    "description": "おすすめのPodcast番組を紹介して皆んなとPodcastトークがしたい。",
+    "url": "https://blog.h3y6e.com/posts/2020/12/20/podcasts/"
+  },
+  {
+    "slug": "a2net",
+    "title": "A2ネットを改善しよう",
+    "date": "2020-12-18",
+    "type": "Build",
+    "tags": [
+      "kmnac",
+      "adventcalendar",
+      "networking"
+    ],
+    "description": "寮のネットワークを改善している話。",
+    "url": "https://blog.h3y6e.com/posts/2020/12/18/a2net/"
+  },
+  {
+    "slug": "gitlab-zero-downtime-updates",
+    "title": "GitLabのアップデート & Zero downtime updates & Slack通知",
+    "date": "2020-05-08",
+    "type": "Guide",
+    "tags": [
+      "gitlab"
+    ],
+    "description": "重い腰を上げてGitLabをアップデートした。そのついでにZero downtime updatesに対応させた。",
+    "url": "https://blog.h3y6e.com/posts/2020/05/08/gitlab-zero-downtime-updates/"
+  },
+  {
+    "slug": "non-root-nvtop",
+    "title": "nvtopを非rootでインストール",
+    "date": "2020-01-28",
+    "type": "Guide",
+    "tags": [
+      "linux"
+    ],
+    "description": "nvtopを研究室のGPUサーバーにインストールした。",
+    "url": "https://blog.h3y6e.com/posts/2020/01/28/non-root-nvtop/"
+  },
+  {
+    "slug": "light-owl-syntax-theme-for-atom",
+    "title": "誰得なAtomのSyntax themeを作った",
+    "date": "2019-12-23",
+    "type": "Report",
+    "tags": [
+      "camphor",
+      "adventcalendar",
+      "editor",
+      "julia"
+    ],
+    "description": "Atomは好きですか？ライトテーマは好きですか？Juliaは好きですか？",
+    "url": "https://blog.h3y6e.com/posts/2019/12/23/light-owl-syntax-theme-for-atom/"
+  },
+  {
+    "slug": "kuac2019",
+    "title": "メインアカウントにbot機能を搭載して運用してるけど意外と上手くやってる",
+    "date": "2019-12-08",
+    "type": "Report",
+    "tags": [
+      "kuac",
+      "adventcalendar",
+      "automation"
+    ],
+    "description": "僕のTwitterアカウントに付属している単位取得率botと降水量を教えてくれるbotについて",
+    "url": "https://blog.h3y6e.com/posts/2019/12/08/kuac2019/"
+  },
+  {
+    "slug": "netlify-github-timed-post",
+    "title": "Netlify +  GitHub ActionsでHugo製ブログの予約投稿",
+    "date": "2019-12-07",
+    "type": "Guide",
+    "tags": [
+      "hosting",
+      "gha"
+    ],
+    "description": "NetlifyでホスティングしているHugo製ブログで予約投稿したいなと思ってGitHub Actions使ったらめちゃ簡単だった。",
+    "url": "https://blog.h3y6e.com/posts/2019/12/07/netlify-github-timed-post/"
+  },
+  {
+    "slug": "eigenvectors-from-eigenvalues-julia",
+    "title": "Eigenvectors from EigenvaluesをJuliaで検証する",
+    "date": "2019-11-19",
+    "type": "Report",
+    "tags": [
+      "julia"
+    ],
+    "description": "Twitterで話題になったり、研究室のslackで話されたりしていたのでJuliaで書いてみた。",
+    "url": "https://blog.h3y6e.com/posts/2019/11/19/eigenvectors-from-eigenvalues-julia/"
+  },
+  {
+    "slug": "webpack-ts-three-js-glsl",
+    "title": "webpack + typescript + three.jsでGLSL (.frag|.vert) を外部モジュールとしてimportする",
+    "date": "2019-11-14",
+    "type": "Guide",
+    "tags": [
+      "typescript",
+      "webgl"
+    ],
+    "description": "typescript + three.jsでGLSLをいい感じに編集したい。",
+    "url": "https://blog.h3y6e.com/posts/2019/11/14/webpack-ts-three-js-glsl/"
+  },
+  {
+    "slug": "how-do-humans-sketch-objects",
+    "title": "[論文読み] How Do Humans Sketch Objects? ",
+    "date": "2019-10-24",
+    "type": "Report",
+    "tags": [
+      "cv"
+    ],
+    "description": "人間はどのように物体をスケッチするか",
+    "url": "https://blog.h3y6e.com/posts/2019/10/24/how-do-humans-sketch-objects/"
+  },
+  {
+    "slug": "ssh-keys",
+    "title": "ssh keys",
+    "date": "2019-10-08",
+    "type": "Guide",
+    "tags": [
+      "ssh"
+    ],
+    "description": "何回やっても覚えられないので自分用に。",
+    "url": "https://blog.h3y6e.com/posts/2019/10/08/ssh-keys/"
+  },
+  {
+    "slug": "shape-from-shading-through-shape-evolution",
+    "title": "[論文読み] Shape from Shading through Shape Evolution",
+    "date": "2019-08-29",
+    "type": "Report",
+    "tags": [
+      "cv"
+    ],
+    "description": "論文読み : 形状進化による3Dデータを用いたShape-from-Shading",
+    "url": "https://blog.h3y6e.com/posts/2019/08/29/shape-from-shading-through-shape-evolution/"
+  },
+  {
+    "slug": "seccamp2019",
+    "title": "セキュリティ・キャンプ2019参加記",
+    "date": "2019-08-24",
+    "type": "Report",
+    "tags": [
+      "seccamp",
+      "julia"
+    ],
+    "description": "セキュリティ・キャンプ全国大会2019に参加した話本編",
+    "url": "https://blog.h3y6e.com/posts/2019/08/24/seccamp2019/"
+  },
+  {
+    "slug": "seccamp2019-wakeup",
+    "title": "セキュリティ・キャンプ2019起床記",
+    "date": "2019-08-17",
+    "type": "Report",
+    "tags": [
+      "seccamp"
+    ],
+    "description": "セキュリティ・キャンプ全国大会2019に参加した話起床編",
+    "url": "https://blog.h3y6e.com/posts/2019/08/17/seccamp2019-wakeup/"
+  },
+  {
+    "slug": "cannnot-install-python3-4-3-by-pyenv-on-ubuntu",
+    "title": "pyenvでPython 3.4.3がインストールできない（Ubuntu 18.04）",
+    "date": "2019-06-28",
+    "type": "Guide",
+    "tags": [
+      "linux",
+      "python"
+    ],
+    "description": "Ubuntu18.04のpyenvでPython 3.4.3がインストールできなかったのでその解決法。",
+    "url": "https://blog.h3y6e.com/posts/2019/06/28/cannnot-install-python3-4-3-by-pyenv-on-ubuntu/"
+  },
+  {
+    "slug": "github-pages-netlify-managed-dns-custom-domain",
+    "title": "GitHub Pages + Netlify DNSでカスタムドメイン",
+    "date": "2019-06-09",
+    "type": "Guide",
+    "tags": [
+      "hosting"
+    ],
+    "description": "GitHub Pagesにもカスタムドメインを設定する。",
+    "url": "https://blog.h3y6e.com/posts/2019/06/09/github-pages-netlify-managed-dns-custom-domain/"
+  },
+  {
+    "slug": "netlify-custom-domain",
+    "title": "Netlifyでさくっとカスタムドメイン",
+    "date": "2019-06-09",
+    "type": "Guide",
+    "tags": [
+      "hosting"
+    ],
+    "description": "院試勉強の疲れからか気がついたらドメイン買ってnetlifyに設定してしまったので殴り書く。",
+    "url": "https://blog.h3y6e.com/posts/2019/06/09/netlify-custom-domain/"
+  },
+  {
+    "slug": "zsh-prezto-ubuntu",
+    "title": "Ubuntu,Debianにzsh+prezto導入&テーマ変更",
+    "date": "2019-05-25",
+    "type": "Guide",
+    "tags": [
+      "linux",
+      "shell"
+    ],
+    "description": "ググればすぐ出てくるけど何回も同じ作業するのでいい加減まとめたほうがいい気がした。",
+    "url": "https://blog.h3y6e.com/posts/2019/05/25/zsh-prezto-ubuntu/"
+  },
+  {
+    "slug": "multiple-displays-of-different-resolutions-in-ubuntu-for-a-nice-look",
+    "title": "Ubuntuで解像度の異なる複数のディスプレイを同時に、いい感じに使いたい",
+    "date": "2019-05-20",
+    "type": "Guide",
+    "tags": [
+      "linux"
+    ],
+    "description": "研究室で与えられたディスプレイの解像度が異なっていて気持ち悪かったので修正した（?)ときのメモ。",
+    "url": "https://blog.h3y6e.com/posts/2019/05/20/multiple-displays-of-different-resolutions-in-ubuntu-for-a-nice-look/"
+  },
+  {
+    "slug": "terminals-for-windows",
+    "title": "Windows 10のためのTerminal",
+    "date": "2019-05-19",
+    "type": "Guide",
+    "tags": [
+      "windows",
+      "shell"
+    ],
+    "description": "WindowsのTerminal探し。「日本語入力対応、タブ機能あり、高速、お洒落」",
+    "url": "https://blog.h3y6e.com/posts/2019/05/19/terminals-for-windows/"
+  },
+  {
+    "slug": "neural-inverse-rendering-of-an-indoor-scene-from-a-single-image",
+    "title": "[論文読み] Neural Inverse Rendering of an Indoor Scene From a Single Image",
+    "date": "2019-05-17",
+    "type": "Report",
+    "tags": [
+      "cv"
+    ],
+    "description": "論文読み：単一画像からの屋内シーンのニューラルインバースレンダリング",
+    "url": "https://blog.h3y6e.com/posts/2019/05/17/neural-inverse-rendering-of-an-indoor-scene-from-a-single-image/"
+  }
+]
