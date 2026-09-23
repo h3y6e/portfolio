@@ -6,14 +6,6 @@ export interface HeroContent {
   bio: string
 }
 
-export interface ProductContent {
-  title: string
-  content: string
-  link: string
-  code: string | null
-  defunct?: boolean
-}
-
 export interface ExperienceContent {
   date: string
   title: string
@@ -49,7 +41,6 @@ export interface UiCopy {
     links: string
     experience: string
     activities: string
-    works: string
     notes: string
     languages: string
   }
@@ -57,14 +48,12 @@ export interface UiCopy {
   themeToDark: string
   localeToJa: string
   localeToEn: string
-  source: string
   notesPrev: string
   notesNext: string
 }
 
 export interface PortfolioContent {
   hero: HeroContent
-  products: ProductContent[]
   experiences: ExperienceContent[]
   activities: ExperienceContent[]
   notes: NoteContent[]

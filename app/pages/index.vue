@@ -25,7 +25,6 @@ useSeoMeta({
     </div>
     <SectionExperience />
     <SectionActivities />
-    <SectionWorks />
     <SectionNotes />
     <SectionLanguages />
   </main>
