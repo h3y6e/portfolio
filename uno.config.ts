@@ -14,14 +14,6 @@ export default defineConfig({
       sans: '"h3y6e.com Sans", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif',
       mono: '"h3y6e.com Sans", ui-monospace, monospace',
     },
-    colors: {
-      primary: {
-        DEFAULT: '#a5ebec',
-        deep: '#2aa298',
-        300: '#a5ebec',
-        600: '#2aa298',
-      },
-    },
   },
   shortcuts: [
     {
@@ -29,9 +21,8 @@ export default defineConfig({
       'bg-base': 'bg-[var(--color-bg)]',
       'border-base': 'border-#8882',
       'bg-active': 'bg-#8881',
-      'color-active': 'color-primary-deep dark:color-primary',
-      'op-fade': 'op-65 dark:op-55',
-      'op-mute': 'op-40 dark:op-35',
+      'op-fade': 'op-[var(--op-fade)]',
+      'op-mute': 'op-[var(--op-mute)]',
       'z-top-nav': 'z-60',
       'site-shell': 'mx-auto max-w-180 px-6',
       'section-gap': 'mt-14',
@@ -49,6 +40,7 @@ export default defineConfig({
   safelist: [
     'i-ph-sun-dim',
     'i-ph-moon-stars',
+    'i-ph-cat',
     'i-ph-caret-left',
     'i-ph-caret-right',
     ...links.map(link => link.icon),

@@ -44,8 +44,7 @@ export interface UiCopy {
     notes: string
     languages: string
   }
-  themeToLight: string
-  themeToDark: string
+  themeTo: (theme: string) => string
   localeToJa: string
   localeToEn: string
   notesPrev: string
