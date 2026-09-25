@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { theme, toggleTheme } = useTheme()
+const { nextTheme, cycleTheme } = useTheme()
 const { locale, toggleLocale } = useLocale()
 const { content } = useContent()
 </script>
@@ -20,12 +20,13 @@ const { content } = useContent()
       </button>
       <button
         type="button"
-        class="btn-icon"
-        :aria-label="theme === 'dark' ? content.ui.themeToLight : content.ui.themeToDark"
-        @click="toggleTheme"
+        class="theme-toggle btn-icon"
+        :aria-label="content.ui.themeTo(themeNames[nextTheme])"
+        @click="cycleTheme"
       >
-        <span class="i-ph-sun-dim size-4 hidden dark:inline-block" aria-hidden="true" />
-        <span class="i-ph-moon-stars size-4 inline-block dark:hidden" aria-hidden="true" />
+        <span class="theme-icon theme-icon--light i-ph-sun-dim size-4" aria-hidden="true" />
+        <span class="theme-icon theme-icon--dark i-ph-moon-stars size-4" aria-hidden="true" />
+        <span class="theme-icon theme-icon--catppuccin i-ph-cat size-4" aria-hidden="true" />
       </button>
     </div>
   </header>

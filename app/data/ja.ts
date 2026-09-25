@@ -13,6 +13,7 @@ export const ja: PortfolioContent = {
       title: '京都大学',
       content: '工学部 電気電子工学科',
       link: 'https://www.s-ee.t.kyoto-u.ac.jp/',
+      kind: 'academic',
     },
     {
       date: 'March 2019 – December 2019',
@@ -20,48 +21,56 @@ export const ja: PortfolioContent = {
       content:
         'Windows カーネルモードデバイスドライバ開発\nWindows GUIアプリケーション開発',
       link: 'https://www.co-conv.jp/',
+      kind: 'temporary',
     },
     {
       date: 'April 2019 – September 2020',
       title: 'コンピュータビジョン研究室',
       content: '京都大学 工学部 電気電子工学科',
       link: 'https://vision.ist.i.kyoto-u.ac.jp',
+      kind: 'academic',
     },
     {
       date: 'December 2019 – December 2021',
       title: 'アイフル株式会社 (契約社員)',
       content: 'Webフロントエンド開発\nDevOps\nエンジニアリングマネジメント',
       link: 'https://www.aiful.co.jp/',
+      kind: 'temporary',
     },
     {
       date: 'August 2020',
       title: 'クックパッド株式会社 (インターン)',
       content: 'Webアプリケーション開発',
       link: 'https://info.cookpad.com/',
+      kind: 'temporary',
     },
     {
       date: 'September 2020',
       title: '株式会社 VOYAGE GROUP (インターン)',
       content: 'フルサイクルデベロッパー',
       link: 'https://voyagegroup.com/',
+      kind: 'temporary',
     },
     {
       date: 'October 2020 – September 2022',
       title: 'インタラクティブメディア設計学研究室',
       content: '奈良先端科学技術大学院大学\n先端科学技術研究科 情報科学領域',
       link: 'https://imdl.naist.jp/',
+      kind: 'academic',
     },
     {
       date: 'August 2021',
       title: 'サイボウズ株式会社 (インターン)',
       content: '開発本部 生産性向上チーム\nインフラ',
       link: 'https://cybozu.co.jp/',
+      kind: 'temporary',
     },
     {
       date: 'August 2021',
       title: '株式会社はてな (インターン)',
       content: 'サービス・システム開発本部 システムプラットフォーム部\nSRE',
       link: 'https://hatenacorp.jp/',
+      kind: 'temporary',
     },
     {
       date: 'September 2021',
@@ -69,6 +78,7 @@ export const ja: PortfolioContent = {
       content:
         'ライブエクスペリエンス事業本部 システム部 Fansta開発G\nWebフロントエンド開発\nバックエンド開発',
       link: 'https://www.mixi.co.jp',
+      kind: 'temporary',
     },
     {
       date: 'October 2021 – November 2021',
@@ -76,12 +86,14 @@ export const ja: PortfolioContent = {
       content:
         'ビズリーチ事業部 プロダクト開発部 システム横断G\nバックエンド開発',
       link: 'https://www.bizreach.co.jp',
+      kind: 'temporary',
     },
     {
       date: 'March 2022',
       title: '株式会社ミクシィ (インターン)',
       content: '開発本部 CTO室 たんぽぽグループ\nインフラ',
       link: 'https://www.mixi.co.jp',
+      kind: 'temporary',
     },
     {
       date: 'April 2023 –',
@@ -89,6 +101,7 @@ export const ja: PortfolioContent = {
       content:
         '開発本部 たんぽぽ室 たんぽぽグループ\n脳波基礎研究\n音声通信基盤開発\nゲームリレーサーバー開発\nWebアプリケーション開発\nモバイルアプリ開発',
       link: 'https://mixi.co.jp',
+      kind: 'permanent',
     },
   ],
   activities: [
@@ -194,8 +207,7 @@ export const ja: PortfolioContent = {
       notes: 'Notes',
       languages: 'Languages',
     },
-    themeToLight: 'ライトモードに切替',
-    themeToDark: 'ダークモードに切替',
+    themeTo: theme => `${theme} テーマに切替`,
     localeToJa: '日本語に切替',
     localeToEn: 'Switch to English',
     notesPrev: '新しい年へ',

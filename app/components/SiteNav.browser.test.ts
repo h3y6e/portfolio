@@ -10,7 +10,7 @@ it('renders brand link and locale / theme controls', async () => {
 
   await expect.element(screen.getByRole('link', { name: 'h3y6e.com' })).toBeVisible()
   await expect.element(screen.getByRole('button', { name: 'Switch to English' })).toBeVisible()
-  await expect.element(screen.getByRole('button', { name: 'ライトモードに切替' })).toBeVisible()
+  await expect.element(screen.getByRole('button', { name: 'Latte テーマに切替' })).toBeVisible()
 })
 
 it('toggles locale label when switching language', async () => {
@@ -24,11 +24,15 @@ it('toggles locale label when switching language', async () => {
   await expect.element(screen.getByText('JA')).toBeVisible()
 })
 
-it('toggles theme aria-label when switching appearance', async () => {
+it('when the last theme is active, clicking the theme button wraps around to the first theme', async () => {
+  // Arrange
   setLocaleCookie('ja')
   const screen = await render(SiteNav)
-  await applyTheme('dark')
+  await applyTheme('mocha')
 
-  await screen.getByRole('button', { name: 'ライトモードに切替' }).click()
-  await expect.element(screen.getByRole('button', { name: 'ダークモードに切替' })).toBeVisible()
+  // Act
+  await screen.getByRole('button', { name: 'Light テーマに切替' }).click()
+
+  // Assert
+  await expect.element(screen.getByRole('button', { name: 'Dark テーマに切替' })).toBeVisible()
 })

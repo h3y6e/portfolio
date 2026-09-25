@@ -43,6 +43,7 @@ function clearActive(): void {
         v-for="{ item, parts, ongoing } in rows"
         :key="rowKey(item)"
         class="timeline-item reveal"
+        :data-kind="item.kind"
         :class="{
           'timeline-item--active': activeKey === rowKey(item),
           'timeline-item--ongoing': ongoing,

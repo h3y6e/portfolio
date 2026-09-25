@@ -5,8 +5,7 @@ const { content } = useContent()
 
 function brandStyle(item: { brand: string, brandDark?: string }) {
   return {
-    '--link-brand': item.brand,
-    '--link-brand-dark': item.brandDark ?? item.brand,
+    '--link-brand': `light-dark(${item.brand}, ${item.brandDark ?? item.brand})`,
   }
 }
 

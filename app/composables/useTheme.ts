@@ -1,14 +1,32 @@
-type Theme = 'light' | 'dark'
+export const themes = ['light', 'dark', 'latte', 'frappe', 'macchiato', 'mocha'] as const
+export type Theme = typeof themes[number]
+
+export const themeNames: Record<Theme, string> = {
+  light: 'Light',
+  dark: 'Dark',
+  latte: 'Latte',
+  frappe: 'Frappé',
+  macchiato: 'Macchiato',
+  mocha: 'Mocha',
+}
+
+function isTheme(value: string): value is Theme {
+  return (themes as readonly string[]).includes(value)
+}
 
 export function useTheme() {
   const colorMode = useColorMode()
+  // During prerender the value is 'system' until the client script resolves it
   const theme = computed<Theme>(() =>
-    colorMode.value === 'light' ? 'light' : 'dark',
+    isTheme(colorMode.value) ? colorMode.value : 'dark',
+  )
+  const nextTheme = computed<Theme>(() =>
+    themes[(themes.indexOf(theme.value) + 1) % themes.length]!,
   )
 
-  function setTheme(next: Theme): void {
+  function cycleTheme(): void {
     const apply = () => {
-      colorMode.preference = next
+      colorMode.preference = nextTheme.value
     }
     if (import.meta.client)
       withViewTransition(apply)
@@ -16,9 +34,5 @@ export function useTheme() {
       apply()
   }
 
-  function toggleTheme(): void {
-    setTheme(theme.value === 'dark' ? 'light' : 'dark')
-  }
-
-  return { theme, setTheme, toggleTheme }
+  return { nextTheme, cycleTheme }
 }
