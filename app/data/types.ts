@@ -6,11 +6,14 @@ export interface HeroContent {
   bio: string
 }
 
+export type ExperienceKind = 'academic' | 'temporary' | 'permanent'
+
 export interface ExperienceContent {
   date: string
   title: string
   content: string
   link: string
+  kind?: ExperienceKind
 }
 
 export interface NoteContent {

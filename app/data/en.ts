@@ -13,6 +13,7 @@ export const en: PortfolioContent = {
       title: 'Kyoto University',
       content: 'Undergraduate School of Electrical and Electronic Engineering',
       link: 'https://www.s-ee.t.kyoto-u.ac.jp/',
+      kind: 'academic',
     },
     {
       date: 'March 2019 – December 2019',
@@ -20,6 +21,7 @@ export const en: PortfolioContent = {
       content:
         'Windows kernel-mode device driver development\nWindows GUI application development',
       link: 'https://www.co-conv.jp/',
+      kind: 'temporary',
     },
     {
       date: 'April 2019 – September 2020',
@@ -27,24 +29,28 @@ export const en: PortfolioContent = {
       content:
         'Kyoto University, Undergraduate School of Electrical and Electronic Engineering',
       link: 'https://vision.ist.i.kyoto-u.ac.jp',
+      kind: 'academic',
     },
     {
       date: 'December 2019 – December 2021',
       title: 'AIFUL CORPORATION (contract)',
       content: 'Web frontend\nDevOps\nEngineering management',
       link: 'https://www.aiful.co.jp/',
+      kind: 'temporary',
     },
     {
       date: 'August 2020',
       title: 'Cookpad Inc. (internship)',
       content: 'Web application development',
       link: 'https://info.cookpad.com/',
+      kind: 'temporary',
     },
     {
       date: 'September 2020',
       title: 'VOYAGE GROUP, Inc. (internship)',
       content: 'フルサイクルデベロッパー',
       link: 'https://voyagegroup.com/',
+      kind: 'temporary',
     },
     {
       date: 'October 2020 – September 2022',
@@ -52,18 +58,21 @@ export const en: PortfolioContent = {
       content:
         'Nara Institute of Science and Technology (NAIST)\nGraduate School of Science and Technology, Division of Information Science',
       link: 'https://imdl.naist.jp/',
+      kind: 'academic',
     },
     {
       date: 'August 2021',
       title: 'Cybozu, Inc. (internship)',
       content: '開発本部 生産性向上チーム\nインフラ',
       link: 'https://cybozu.co.jp/',
+      kind: 'temporary',
     },
     {
       date: 'August 2021',
       title: 'Hatena Co., Ltd. (internship)',
       content: 'サービス・システム開発本部 システムプラットフォーム部\nSRE',
       link: 'https://hatenacorp.jp/',
+      kind: 'temporary',
     },
     {
       date: 'September 2021',
@@ -71,6 +80,7 @@ export const en: PortfolioContent = {
       content:
         'ライブエクスペリエンス事業本部 システム部 Fansta開発G\nWebフロントエンド開発\nバックエンド開発',
       link: 'https://www.mixi.co.jp',
+      kind: 'temporary',
     },
     {
       date: 'October 2021 – November 2021',
@@ -78,12 +88,14 @@ export const en: PortfolioContent = {
       content:
         'ビズリーチ事業部 プロダクト開発部 システム横断G\nバックエンド開発',
       link: 'https://www.bizreach.co.jp',
+      kind: 'temporary',
     },
     {
       date: 'March 2022',
       title: 'mixi, Inc. (internship)',
       content: '開発本部 CTO室 たんぽぽグループ\nインフラ',
       link: 'https://www.mixi.co.jp',
+      kind: 'temporary',
     },
     {
       date: 'April 2023 –',
@@ -91,6 +103,7 @@ export const en: PortfolioContent = {
       content:
         '開発本部 たんぽぽ室 たんぽぽグループ\n脳波基礎研究\n音声通信基盤開発\nゲームリレーサーバー開発\nWebアプリケーション開発\nモバイルアプリ開発',
       link: 'https://mixi.co.jp',
+      kind: 'permanent',
     },
   ],
   activities: [
