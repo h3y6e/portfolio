@@ -54,7 +54,7 @@ export const links: LinkContent[] = [
   },
   {
     title: 'Bluesky',
-    link: 'https://bsky.app/profile/h3y6e.bsky.social',
+    link: 'https://bsky.app/profile/h3y6e.com',
     icon: 'i-simple-icons-bluesky',
     brand: '#0285FF',
     rel: 'me atproto',
