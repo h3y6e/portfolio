@@ -7,7 +7,7 @@ export const indieweb = {
   blogFeed: 'https://blog.h3y6e.com/feed',
   fediverseCreator: '@h3y6e@fedibird.com',
   photo: `${siteMeta.url}/logos/logo.png`,
-  email: 'mailto:while.soaks0d@icloud.com',
+  email: 'mailto:heyhoe@h3y6e.com',
 } as const
 
 export function identityLinks() {

@@ -3,7 +3,7 @@ import type { LinkContent } from './types'
 export const links: LinkContent[] = [
   {
     title: 'Email',
-    link: 'mailto:while.soaks0d@icloud.com',
+    link: 'mailto:heyhoe@h3y6e.com',
     icon: 'i-ph-envelope-simple',
     brand: '#3693F3',
   },
