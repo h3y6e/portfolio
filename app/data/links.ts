@@ -83,7 +83,7 @@ export const links: LinkContent[] = [
   },
   {
     title: 'Instagram',
-    link: 'https://www.instagram.com/h3y6e/',
+    link: 'https://www.instagram.com/h3y6e',
     icon: 'i-simple-icons-instagram',
     brand: '#FF0069',
     rel: 'me',
