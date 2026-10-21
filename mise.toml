@@ -2,5 +2,5 @@
 _.path = [ "{{config_root}}/node_modules/.bin" ]
 
 [tools]
-aube = "2.2.17"
-node = "26.9.0"
+aube = "2.8.1"
+node = "26.12.1"
